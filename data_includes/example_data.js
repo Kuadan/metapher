@@ -20,10 +20,12 @@ PennController(
         .settings.size(200,200) // Don't print it yet
         //.print()
     ,
-    newCanvas("tanks", 500, 200)
+    newCanvas("tanks", 400, 400)
         .settings.add(   0, 0, getImage("competitor") ) // 0 = left of canvas
-        .settings.add( 300, 0, getImage("target") )  // 300 = 100px to the right of the right edge of competitor
-        .print() // This prints the canvas, i.e. target and competitor side by side
+        .settings.add( 200, 0, getImage("target") )  // 300 = 100px to the right of the right edge of competitor
+        .settings.add(   0, 200, getImage("competitor") ) // 0 = left of canvas
+        .settings.add( 200, 200, getImage("target") )  // 300 = 100px to the right of the right edge of competitor
+    .print() // This prints the canvas, i.e. target and competitor side by side
     ,
     newSelector("tank")
         .settings.add( getImage("target") , getImage("competitor") )
