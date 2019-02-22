@@ -4,7 +4,7 @@ PennController(
     defaultKey
         .wait()
     ,
-    newText("test sentence", "Das Maedchen meint, dass Koestlichkeit und ... absolut identisch sind.")
+    newText("test sentence", "Das Mädchen meint, dass Koestlichkeit und ... absolut identisch sind.")
         .settings.center()
         .settings.bold()
         .print()
@@ -16,7 +16,7 @@ PennController(
         .settings.size(200,200) // Don't print it yet
         //.print()
     ,
-    newImage("target", "37_2_JPG.JPG")
+    newImage("target", "38_4_JPG.JPG")
         .settings.size(200,200) // Don't print it yet
         //.print()
     ,
@@ -28,5 +28,5 @@ PennController(
     newSelector("tank")
         .settings.add( getImage("target") , getImage("competitor") )
         .wait()
-    
+
 );
