@@ -1,0 +1,60 @@
+<div style="width: 40em;">
+<p>
+Diese Experiment hat 2 Teile. In dem ersten Teil ist zuerst ein Kontext zu lesen. Dann werden 4 Bilden auf dem Bildschrim praesentiert. 
+</p>
+<p>
+In den zweiten Teil, sollen Sie eine Fragebogen beantworten. 
+</p>
+<p>
+[Datenschutzerklaerung, etc., etc.]
+</p>
+
+<table>
+<tr>
+<td colspan="2" style="width: 30em; padding-bottom: 1em;">
+<i>(The form below is just a rough example showing all of the input controls that work properly
+with Ibex. Obviously it would not necessarily be appropriate to collect all of this
+data on subjects.)</i>
+</td>
+</tr>
+<tr>
+  <td>Name:</td><td><input name="name" type="text" size="30" class="obligatory" /></td>
+</tr>
+<tr>
+<td colspan="2"><label class="error" for="name"></label></td>
+</tr>
+<tr>
+  <td>Alter:</td><td><input name="age" type="text" size="30" class="obligatory" /></td>
+</tr>
+<tr>
+<td colspan="2"><label class="error" for="age"></label></td>
+</tr>
+<tr>
+  <td>Geschlecht:</td><td><input name="sex" type="radio" value="male" class="obligatory" id="csexmale" /><label for="csexmale">Maennlich</label>
+                   <input name="sex" type="radio" value="female" id="csexfemale"/><label for="csexfemale"> Weiblich</label>
+</tr>
+<tr>
+<td colspan="2"><label class="error" for="sex"></label></td>
+</tr>
+<tr>
+<td colspan="2" style="padding-bottom: 1em;"><input type="checkbox" name="credit" id="creditcx" /><label for="creditcx"> Ich bekomme Aufwand fuer diese Experiment.</label></td>
+</tr>
+<tr>
+<td colspan="2" style="padding-bottom: 1em;"><input type="checkbox" class="obligatory" name="consent" id="consentcx" /><label for="consentcx"> Ich bin mit der Teilnahmensbedingung einverstanden.</label></td>
+</tr>
+<tr>
+<td colspan="2">
+<label class="error" for="consent"></label>
+</td>
+</tr>
+<tr>
+  <td colspan="2">Write something:</td>
+</tr>
+<tr>
+  <td colspan="2">
+    <textarea name="write_something" rows="5" cols="40"></textarea>
+  </td>
+</tr>
+</table>
+
+</div>

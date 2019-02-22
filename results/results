@@ -1,0 +1,170 @@
+#
+# Results on Wednesday February 20 2019 11:19:30 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36
+# Design number was non-random = 0
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1550661570,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,Start,1550661560074,NULL
+1550661570,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,End,1550661569957,NULL
+#
+# Results on Wednesday February 20 2019 11:25:23 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36
+# Design number was non-random = 1
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1550661923,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,Start,1550661898201,NULL
+1550661923,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,End,1550661922740,NULL
+#
+# Results on Wednesday February 20 2019 11:37:43 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36
+# Design number was non-random = 2
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1550662663,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,Start,1550662658313,NULL
+1550662663,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,End,1550662662845,NULL
+#
+# Results on Wednesday February 20 2019 11:39:35 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36
+# Design number was non-random = 3
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1550662776,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,Start,1550662768845,NULL
+1550662776,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,End,1550662775609,NULL
+#
+# Results on Wednesday February 20 2019 11:58:08 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36
+# Design number was non-random = 4
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1550663888,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,Start,1550663876001,NULL
+1550663888,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,End,1550663888145,NULL
+#
+# Results on Wednesday February 20 2019 12:02:56 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36
+# Design number was non-random = 5
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1550664176,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,Start,1550664164847,NULL
+1550664176,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,End,1550664175937,NULL
+#
+# Results on Wednesday February 20 2019 12:23:50 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36
+# Design number was non-random = 6
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1550665430,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,Start,1550665426857,NULL
+1550665430,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,End,1550665429892,NULL
+#
+# Results on Thursday February 21 2019 09:18:23 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36
+# Design number was non-random = 7
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1550740703,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_PreloadFailed_,37_1_related_JPG.jpg,1550740687872,NULL
+1550740703,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_PreloadFailed_,38_2_JPG.jpg,1550740687873,NULL
+1550740703,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,Start,1550740687873,NULL
+1550740703,0494cab780cd0b17fd13fe787ef13b36,PennController,0,0,unlabeled,NULL,PennController,0,_Trial_,End,1550740702695,NULL
