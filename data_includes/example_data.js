@@ -38,5 +38,40 @@ PennController(
     newSelector("tank")
         .settings.add( getImage("target") , getImage("competitor1"), getImage("competitor2"), getImage("competitor3") )
         .wait()
-
+    ,
+    newText("test sentence", "Die Apothekerin bedauert, dass Vollbeschäftigung und Spaß am Leben nicht zusammenzupassen scheinen.")
+        .settings.center()
+        .settings.bold()
+        .print()
+    ,
+    newText("instruction", "Wählen Sie bitte ein Bild.")
+    .print()
 );
+        .print()
+    ,
+    newImage("target", "38_1_JPG.JPG")
+        .settings.size(300,300) // Don't print it yet
+        //.print()
+    ,
+    newImage("competitor1", "38_2_JPG.JPG")
+        .settings.size(300,300) // Don't print it yet
+        //.print()
+    ,
+    newImage("competitor2", "38_3_JPG.JPG")
+        .settings.size(300,300) // Don't print it yet
+        //.print()
+    ,
+    newImage("competitor3", "38_4_JPG.JPG")
+        .settings.size(300,300) // Don't print it yet
+        //.print()
+    ,
+    newCanvas("tanks", 600, 600)
+        .settings.add(   0, 0, getImage("target") ) // 0 = left of canvas
+        .settings.add( 300, 0, getImage("competitor1") )  // 300 = 100px to the right of the right edge of competitor
+        .settings.add(   0, 300, getImage("competitor2") ) // 0 = left of canvas
+        .settings.add( 300, 300, getImage("competitor3") )  // 300 = 100px to the right of the right edge of competitor
+        .print() // This prints the canvas, i.e. target and competitor side by side
+    ,
+    newSelector("tank")
+        .settings.add( getImage("target") , getImage("competitor1"), getImage("competitor2"), getImage("competitor3") )
+        .wait()
