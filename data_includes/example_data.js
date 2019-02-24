@@ -45,8 +45,6 @@ PennController(
         .print()
     ,
     newText("instruction", "Wählen Sie bitte ein Bild.")
-    .print()
-);
         .print()
     ,
     newImage("target", "38_1_JPG.JPG")
