@@ -20,7 +20,7 @@ PennController(
         .settings.size(300,300) // Don't print it yet
         //.print()
     ,
-    newImage("competitor2", "37_3_related_JPG.JPG")
+    newImage("competitor2", "37_3_JPG.JPG")
         .settings.size(300,300) // Don't print it yet
         //.print()
     ,
