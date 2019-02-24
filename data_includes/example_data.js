@@ -4,39 +4,39 @@ PennController(
     defaultKey
         .wait()
     ,
-    newText("test sentence", "Das Mädchen meint, dass Koestlichkeit und ... absolut identisch sind.")
+    newText("test sentence", "Das Mädchen meint, dass Köstlichkeit und ... absolut identisch sind.")
         .settings.center()
         .settings.bold()
         .print()
     ,
-    newText("instruction", "Waehlen Sie bitte ein Bild.")
+    newText("instruction", "Wählen Sie bitte ein Bild.")
         .print()
     ,
-    newImage("competitor", "37_1_related_JPG.JPG")
-        .settings.size(200,200) // Don't print it yet
+    newImage("target", "37_1_related_JPG.JPG")
+        .settings.size(300,300) // Don't print it yet
         //.print()
     ,
-    newImage("target", "38_4_JPG.JPG")
-        .settings.size(200,200) // Don't print it yet
+    newImage("competitor1", "37_2_JPG.JPG")
+        .settings.size(300,300) // Don't print it yet
         //.print()
     ,
-    newImage("competitor2", "37_1_related_JPG.JPG")
-        .settings.size(200,200) // Don't print it yet
+    newImage("competitor2", "37_3_related_JPG.JPG")
+        .settings.size(300,300) // Don't print it yet
         //.print()
     ,
-    newImage("target2", "38_4_JPG.JPG")
-        .settings.size(200,200) // Don't print it yet
+    newImage("competitor3", "37_4_JPG.JPG")
+        .settings.size(300,300) // Don't print it yet
         //.print()
     ,
-    newCanvas("tanks", 400, 400)
-        .settings.add(   0, 0, getImage("competitor") ) // 0 = left of canvas
-        .settings.add( 200, 0, getImage("target") )  // 300 = 100px to the right of the right edge of competitor
-        .settings.add(   0, 200, getImage("competitor2") ) // 0 = left of canvas
-        .settings.add( 200, 200, getImage("target2") )  // 300 = 100px to the right of the right edge of competitor
+    newCanvas("tanks", 600, 600)
+        .settings.add(   0, 0, getImage("target") ) // 0 = left of canvas
+        .settings.add( 300, 0, getImage("competitor1") )  // 300 = 100px to the right of the right edge of competitor
+        .settings.add(   0, 300, getImage("competitor2") ) // 0 = left of canvas
+        .settings.add( 300, 300, getImage("competitor3") )  // 300 = 100px to the right of the right edge of competitor
         .print() // This prints the canvas, i.e. target and competitor side by side
     ,
     newSelector("tank")
-        .settings.add( getImage("target") , getImage("competitor") )
+        .settings.add( getImage("target") , getImage("competitor1"), getImage("target2"), getImage("competitor3") )
         .wait()
 
 );
