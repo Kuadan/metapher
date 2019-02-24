@@ -36,7 +36,7 @@ PennController(
         .print() // This prints the canvas, i.e. target and competitor side by side
     ,
     newSelector("tank")
-        .settings.add( getImage("target") , getImage("competitor1"), getImage("target2"), getImage("competitor3") )
+        .settings.add( getImage("target") , getImage("competitor1"), getImage("competitor2"), getImage("competitor3") )
         .wait()
 
 );
