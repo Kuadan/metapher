@@ -37,5 +37,5 @@ PennController(
     ,
     newSelector("tank")
         .settings.add( getImage("target") , getImage("competitor1"), getImage("competitor2"), getImage("competitor3") )
-      
+        .wait()
 );
