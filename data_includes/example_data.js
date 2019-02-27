@@ -43,7 +43,7 @@ PennController(
     defaultKey
         .wait()
     ,
-    newText("test sentence", "Die Apothekerin bedauert, dass ... und ... am Leben nicht zusammenzupassen scheinen..")
+    newText("test sentence", "Die Apothekerin bedauert, dass Vollbeschäftigung und ... am Leben nicht zusammenzupassen scheinen..")
         .settings.center()
         .settings.bold()
         .print()
@@ -77,18 +77,4 @@ PennController(
     newSelector("tank")
         .settings.add( getImage("competitor") , getImage("competitor2"), getImage("competitor3"), getImage("competitor4") )
         .wait()
-);
-PennController.Template(
-    // 'row' will successively point to each row of the table (feel free to use another name)
-    row => PennController(
-        // row.Sentence will iteratively take the value of the column 'Sentence' for each row
-        newText( "sentence" , row.Sentence )
-        ,
-        newScale("judgment",    "cold", "cool", "lukewarm", "warm", "hot")
-            .settings.labelsPosition("top")
-            .settings.before( getText("sentence") )
-            .settings.size("auto")
-            .print()
-            .wait()
-    )
 );
