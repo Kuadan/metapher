@@ -1,23 +1,25 @@
 PennController.Sequence( randomize("picture") );
+
 PennController.ResetPrefix(null);
-PennController.AddHost("http://files.lab.florianschwarz.net/ibexfiles/PennController/SampleTrials/");
-// No need to filter: rating-table.csv only contains what we need for this template
-// No need to filter: rating-picture.csv only contains what we need for this template
-PennController.Template( PennController.GetTable("picturefull.csv") ,
+PennController.AddHost("http://spellout.net/ibexfarm/ajax/download/metapher/data_includes/");
+
+PennController.Template( PennController.GetTable("testlist.csv") ,
     row => PennController( "picture" ,
         defaultImage
-            .settings.size(200, 200)
+            .settings.size(300, 300)
         ,
         newText("test sentence", row.Sentence)
             .print()
         ,
-        newCanvas("patches", 500, 200)
-            .settings.add(   0, 0, newImage("color1", row.Color1) )
-            .settings.add( 300, 0, newImage("color2", row.Color2) )
-            .print()
+        newCanvas("tanks", 600, 600)
+          .settings.add(   0, 0, getImage("picture1", row.picture1) ) // 0 = left of canvas
+          .settings.add( 300, 0, getImage("picture2", row.picture2) )  // 300 = 100px to the right of the right edge of competitor
+          .settings.add(   0, 300, getImage("picture3", row.picture3) ) // 0 = left of canvas
+          .settings.add( 300, 300, getImage("picture4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
+          .print()
         ,
-        newSelector("patch")
-            .settings.add( getImage("color1") , getImage("color2") )
+        newSelector("tank")
+            .settings.add( getImage("picture1") , getImage("picture2"), getImage("picture3"), getImage("picture4") )
             .wait()
     )
 );
