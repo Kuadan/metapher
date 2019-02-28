@@ -1,4 +1,3 @@
-PennController.Sequence( randomize("picture") );
 
 PennController.ResetPrefix(null);
 PennController.AddHost("http://spellout.net/ibexfarm/ajax/download/metapher/data_includes/");
@@ -18,7 +17,7 @@ PennController.Template( PennController.GetTable("testlist.csv") ,
           .settings.add( 300, 300, getImage("picture4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
           .print()
         ,
-        newSelector("tank")
+        newSelector("tanks")
             .settings.add( getImage("picture1") , getImage("picture2"), getImage("picture3"), getImage("picture4") )
             .wait()
     )
