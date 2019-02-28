@@ -12,9 +12,12 @@ PennController.Template( PennController.GetTable("testlist.csv") ,
             .print()
         ,
         newImage("img", row.picture1)
-            .settings.size(300,300) 
+            .settings.size(300,300)
             .print()
-
+        ,
+        newSelector("tank")
+        .settings.add( getImage("img") )
+        .wait()
         // newCanvas("tanks", 600, 600)
         //   .settings.add(   0, 0, getImage("picture1", row.picture1) ) // 0 = left of canvas
         //   .settings.add( 300, 0, getImage("picture2", row.picture2) )  // 300 = 100px to the right of the right edge of competitor
