@@ -8,7 +8,7 @@ PennController.Template( PennController.GetTable("testlist.csv") ,
         defaultImage
             .settings.size(300, 300)
         ,
-        newText("test sentence", row.Sentence)
+        newText("test sentence", row.sentence)
             .print()
         ,
         newCanvas("tanks", 600, 600)
