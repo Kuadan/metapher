@@ -3,7 +3,7 @@ PennController.Sequence( randomize("picture") );
 PennController.ResetPrefix(null);
 PennController.AddHost("http://spellout.net/ibexfarm/ajax/download/metapher/data_includes/");
 
-PennController.Template( PennController.GetTable("test list.csv") ,
+PennController.Template( PennController.GetTable("testlist.csv") ,
     row => PennController( "picture" ,
         defaultImage
             .settings.size(300, 300)
