@@ -29,10 +29,6 @@ PennController.Template( PennController.GetTable("testlist.csv") ,
         // .settings.add( getImage("img1"), getImage("img2"), getImage("img3"), getImage("img4") )
         // .wait()
         newCanvas("tanks", 600, 600)
-          .settings.add(   0, 0, getImage("pic1", row.picture1) ) // 0 = left of canvas
-          .settings.add( 300, 0, getImage("pic2", row.picture2) )  // 300 = 100px to the right of the right edge of competitor
-          .settings.add(   0, 300, getImage("pic3", row.picture3) ) // 0 = left of canvas
-          .settings.add( 300, 300, getImage("pic4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
           .settings.add(   0, 0, newImage("pic1", row.picture1) ) // 0 = left of canvas
           .settings.add( 300, 0, newImage("pic2", row.picture2) )  // 300 = 100px to the right of the right edge of competitor
           .settings.add(   0, 300, newImage("pic3", row.picture3) ) // 0 = left of canvas
