@@ -46,7 +46,7 @@
 // ========== START OF CODE TO COPY INTO YOUR DATA FILE ==========
 var IMAGES_TO_PRELOAD = [
     // CHANGE THESE TO THE URLS OF THE IMAGES THAT YOU WANT TO PRELOAD
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Capra_ibex_nubiana_near_Mitzpe_Ramon_in_summer_2011_%284%29.JPG/1200px-Capra_ibex_nubiana_near_Mitzpe_Ramon_in_summer_2011_%284%29.JPG",
+    "http://spellout.net/ibexfarm/ajax/download/metapher/data_includes/37_1_related_JPG.JPG",
     "http://elelur.com/data_images/mammals/alpine-ibex/alpine-ibex-01.jpg"
 ];
 
@@ -87,5 +87,5 @@ var items = [
     ["preload", "Preloader", { }],
 
     ["img1", "Form", { html: "<img width='300px' src='http://elelur.com/data_images/mammals/alpine-ibex/alpine-ibex-01.jpg'>" } ],
-    ["img2", "Form", { html: "<img width='300px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Capra_ibex_nubiana_near_Mitzpe_Ramon_in_summer_2011_%284%29.JPG/1200px-Capra_ibex_nubiana_near_Mitzpe_Ramon_in_summer_2011_%284%29.JPG'>" } ]
+    ["img2", "Form", { html: "<img width='300px' src='http://spellout.net/ibexfarm/ajax/download/metapher/data_includes/37_1_related_JPG.JPG'>" } ]
 ];
