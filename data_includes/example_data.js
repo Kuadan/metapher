@@ -1,7 +1,7 @@
 PennController.Sequence( randomize("picture") );
 
 PennController.ResetPrefix(null);
-PennController.AddHost("https://www.flickr.com/photos/164453234@N08/shares/uS1CYP/");
+PennController.AddHost("http://spellout.net/ibexfarm/ajax/download/metapher/data_includes/");
 
 PennController.Template( PennController.GetTable("testlist.csv") ,
       row => PennController( "picture" ,
