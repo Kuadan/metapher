@@ -1,6 +1,6 @@
 PennController.Sequence( randomize("picture") );
 PennController.ResetPrefix(null);
-PennController.AddHost("https://www.flickr.com/photos/164453234@N08/shares/x1f24F/");
+PennController.AddHost("http://vfoss.org:9090/ibex/");
 PennController.Template( PennController.GetTable("testlist.csv") ,
     row => PennController( "picture" ,
         defaultImage
