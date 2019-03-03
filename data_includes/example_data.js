@@ -36,7 +36,8 @@ PennController.Template( PennController.GetTable("testlist.csv") ,
           .print()
         ,
         newSelector("tank")
+          .settings.log()
           .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
-            .wait()
+          .wait()
     )
 );
