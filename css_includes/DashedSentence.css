@@ -19,7 +19,7 @@
      visibility: hidden;
 }
 .practice-text {
-    color: blue; 
+    color: blue;
     font-weight: bold;
 }
 .iphone-next {
@@ -29,7 +29,7 @@
     foreground: white;
     text-align: center;
     display: table;
-    font-size: 20px;
+    font-size: 40px;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 2em;
