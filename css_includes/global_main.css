@@ -22,7 +22,7 @@ p.progress-text {
     margin-top: 0;
     margin-bottom: 2em;
     font-style: italic;
-    font-size: big;
+    font-size: small;
 }
 p.practice-box {
     color: blue;
@@ -42,4 +42,9 @@ span.retry:hover {
 }
 span.retry:visited {
     color: blue;
+}
+.Separator-next-item-message {
+    font-style: normal;
+    font-family: Arial;
+    color: #000099;
 }
