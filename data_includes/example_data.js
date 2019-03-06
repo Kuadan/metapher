@@ -32,9 +32,10 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         // .settings.add( getImage("img1"), getImage("img2"), getImage("img3"), getImage("img4") )
         // .wait()
         ,
-        newTimer("hurry", 4000)
+        newTimer("hurry", 2000)
           .start()
           .wait()
+          .remove()
         ,
         newCanvas("tanks", 700, 400)
           .settings.add(  0, 0, newImage("pic1", row.picture1) ) // 0 = left of canvas
