@@ -6,7 +6,7 @@
     font-style: italic;
     clear: left;
     padding-top: 1em;
-    font-size: small;
+    font-size: big;
 }
 li.normal-answer {
     text-align: left;
@@ -41,7 +41,7 @@ li.scale-box {
     font-style: italic;
 }
 li.scale-box a {
-    text-decoration: none; 
+    text-decoration: none;
     display: block;
     vertical-align: middle;
 }
@@ -57,4 +57,3 @@ span.fake-link {
 span:hover.fake-link {
     cursor: pointer;
 }
-
