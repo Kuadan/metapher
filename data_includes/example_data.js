@@ -32,6 +32,10 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         // .settings.add( getImage("img1"), getImage("img2"), getImage("img3"), getImage("img4") )
         // .wait()
         ,
+        newTimer("hurry", 5000)
+          .start()
+          .wait()
+        ,
         newCanvas("tanks", 700, 400)
           .settings.add(  0, 0, newImage("pic1", row.picture1) ) // 0 = left of canvas
           .settings.add( 700, 0, newImage("pic2", row.picture2) )  // 300 = 100px to the right of the right edge of competitor
@@ -39,14 +43,10 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
           .settings.add( 700, 400, newImage("pic4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
           .print()
         ,
-        newTimer("hurry", 5000)
-          .start()
-          .wait()
-        ,
         newSelector("tank")
           .settings.log()
           .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
           .wait()
-        
+
     )
 );
