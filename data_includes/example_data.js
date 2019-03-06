@@ -4,7 +4,7 @@ PennController.AddHost("http://vfoss.org:9090/ibex/");
 PennController.Template( PennController.GetTable("itemlist.csv") ,
     row => PennController( "picture" ,
         defaultImage
-            .settings.size(1280, 720)
+            .settings.size(640, 360)
         ,
         newText("test sentence", row.sentence)
             .settings.center()
@@ -30,7 +30,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         // newSelector("tank")
         // .settings.add( getImage("img1"), getImage("img2"), getImage("img3"), getImage("img4") )
         // .wait()
-        newCanvas("tanks", 2560, 1440)
+        newCanvas("tanks", 1280, 720)
           .settings.add(  0, 0, newImage("pic1", row.picture1) ) // 0 = left of canvas
           .settings.add( 1280, 0, newImage("pic2", row.picture2) )  // 300 = 100px to the right of the right edge of competitor
           .settings.add(   0, 720, newImage("pic3", row.picture3) ) // 0 = left of canvas
