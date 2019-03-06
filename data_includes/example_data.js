@@ -6,7 +6,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         defaultImage
             .settings.size(300, 300)
         ,
-        newText("test sentence", row.sentence)
+        newText("sentence", row.sentence)
             .print()
         ,
         // newImage("img1", row.picture1)
