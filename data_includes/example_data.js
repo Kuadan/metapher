@@ -35,7 +35,9 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         newTimer("hurry", 2000)
           .start()
           .wait()
-          .settings.hidden("test sentence")
+        ,
+        getText("test sentence")
+          .remove()
         ,
         newCanvas("tanks", 700, 400)
           .settings.add(  0, 0, newImage("pic1", row.picture1) ) // 0 = left of canvas
