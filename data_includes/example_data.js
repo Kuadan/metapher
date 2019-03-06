@@ -30,11 +30,11 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         // newSelector("tank")
         // .settings.add( getImage("img1"), getImage("img2"), getImage("img3"), getImage("img4") )
         // .wait()
-        newCanvas("tanks", 1280, 720)
+        newCanvas("tanks", 640, 360)
           .settings.add(  0, 0, newImage("pic1", row.picture1) ) // 0 = left of canvas
-          .settings.add( 1280, 0, newImage("pic2", row.picture2) )  // 300 = 100px to the right of the right edge of competitor
-          .settings.add(   0, 720, newImage("pic3", row.picture3) ) // 0 = left of canvas
-          .settings.add( 1280, 720, newImage("pic4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
+          .settings.add( 640, 0, newImage("pic2", row.picture2) )  // 300 = 100px to the right of the right edge of competitor
+          .settings.add(   0, 360, newImage("pic3", row.picture3) ) // 0 = left of canvas
+          .settings.add( 640, 360, newImage("pic4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
           .print()
         ,
         newSelector("tank")
