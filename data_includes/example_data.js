@@ -8,7 +8,8 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         ,
         newText("test sentence", row.sentence)
             .settings.center()
-            .settings.css("font-size", "30pt")
+            .settings.css("font-size", "40pt")
+            .settings.css("margin", "30px")
             .print()
         ,
         // newImage("img1", row.picture1)
