@@ -42,5 +42,9 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
           .settings.log()
           .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
           .wait()
+        ,
+        newTimer("hurry", 5000)
+          .start()
+          .wait()
     )
 );
