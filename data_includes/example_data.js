@@ -43,6 +43,10 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
           .settings.add( 700, 400, newImage("pic4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
           .print()
         ,
+        newTimer("hurry", 3000)
+          .start()
+          .wait()
+        ,
         newSelector("tank")
           .settings.log()
           .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
