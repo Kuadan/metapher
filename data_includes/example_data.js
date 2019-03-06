@@ -32,7 +32,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         // .wait()
         newCanvas("tanks", 2560, 1440)
           .settings.add(  0, 0, newImage("pic1", row.picture1) ) // 0 = left of canvas
-          .settings.add( 1280, 720, newImage("pic2", row.picture2) )  // 300 = 100px to the right of the right edge of competitor
+          .settings.add( 1280, 0, newImage("pic2", row.picture2) )  // 300 = 100px to the right of the right edge of competitor
           .settings.add(   0, 720, newImage("pic3", row.picture3) ) // 0 = left of canvas
           .settings.add( 1280, 720, newImage("pic4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
           .print()
