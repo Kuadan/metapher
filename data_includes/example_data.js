@@ -7,7 +7,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
             .settings.size(640, 360)
         ,
         newText("test sentence", row.sentence)
-            .settings.css("position", "absolute", "left:40pt")
+            .settings.css("position", "absolute", "left:80pt")
             .settings.css("font-size", "40pt")
             .settings.css("margin", "30px")
             .print()
