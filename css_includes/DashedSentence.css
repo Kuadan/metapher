@@ -1,5 +1,5 @@
 .sentence {
-     background-color: white;
+     background-color: blue;
      clear: both;
 }
 .question {
@@ -10,7 +10,7 @@
 }
 .sentence {
     line-height: 400%;
-    font-size:40pt;
+    font-size: 80em;
     margin: 30em;
 }
 .ospan {
