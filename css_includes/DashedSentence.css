@@ -9,7 +9,9 @@
     padding-left: 0.6em;
 }
 .sentence {
-    line-height: 400%;
+    line-height: 400%
+    font-size:1em;
+    margin-top: -1.4em;;
 }
 .ospan {
      border-bottom: 1px solid #9ea4b1;
