@@ -22,7 +22,7 @@ p.progress-text {
     margin-top: 0;
     margin-bottom: 2em;
     font-style: italic;
-    font-size: 40pt;
+    font-size: small;
 }
 p.practice-box {
     color: blue;
