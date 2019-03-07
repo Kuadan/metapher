@@ -52,10 +52,6 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         newSelector("tank")
           //.settings.log()
           .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
-        ,
-        getSeletor()
-        ,
-        getTimer("quick")
-           .wait()
+          .wait()
     )
 );
