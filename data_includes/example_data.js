@@ -32,7 +32,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         // .settings.add( getImage("img1"), getImage("img2"), getImage("img3"), getImage("img4") )
         // .wait()
         ,
-        newTimer("hurry", 2000)
+        newTimer("hurry",1000)
           .start()
           .wait()
         ,
