@@ -56,7 +56,6 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         getSeletor()
         ,
         getTimer("quick")
-           .test.ended()
-          
+           .wait()
     )
 );
