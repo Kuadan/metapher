@@ -11,7 +11,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
             .settings.css("font-size", "40pt")
             .settings.css("margin", "30px")
             .print()
-
+          ,
         // newImage("img1", row.picture1)
         //     .settings.size(300,300)
         //     .print()
@@ -31,23 +31,23 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         // newSelector("tank")
         // .settings.add( getImage("img1"), getImage("img2"), getImage("img3"), getImage("img4") )
         // .wait()
-        ,
-        newTimer("hurry",1000)
-          .start()
-          .wait()
-        ,
-        getText("test sentence")
-          .remove()
-        ,
+        //,
+        //newTimer("hurry",1000)
+          //.start()
+          //.wait()
+        //,
+        //getText("test sentence")
+          //.remove()
+        //,
         newCanvas("tanks", 700, 400)
           .settings.add(  0, 0, newImage("pic1", row.picture1) ) // 0 = left of canvas
           .settings.add( 700, 0, newImage("pic2", row.picture2) )  // 300 = 100px to the right of the right edge of competitor
           .settings.add(   0, 400, newImage("pic3", row.picture3) ) // 0 = left of canvas
           .settings.add( 700, 400, newImage("pic4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
           .print()
-        ,
-        newTimer("quick", 4000)
-          .start()
+        //,
+        //newTimer("quick", 4000)
+          //.start()
         ,
         newSelector("tank")
           //.settings.log()
