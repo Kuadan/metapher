@@ -49,7 +49,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
           .print()
         ,
         newTimer("reminder", 4000)
-          .settings.callback( getText("test sentence").settings.text("Timed-out... Bitte wählen Sie ein Bild") )
+          .settings.callback( getText("test sentence").settings.text("Timed-out.") )
           .start()
 
         ,
