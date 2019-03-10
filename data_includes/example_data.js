@@ -13,6 +13,12 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
             .settings.css("padding-left", "350pt")
             .print()
           ,
+        newText("remind", "Too sloooooow! ")
+          .settings.css("font-size", "40pt")
+          //.settings.css("margin", "30px")
+          .settings.css("padding-left", "350pt")
+          //.print()
+        ,
         // newImage("img1", row.picture1)
         //     .settings.size(300,300)
         //     .print()
@@ -33,7 +39,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         // .settings.add( getImage("img1"), getImage("img2"), getImage("img3"), getImage("img4") )
         // .wait()
         //,
-        newTimer("hurry",1000)
+        newTimer("removeText",1000)
           .start()
           .wait()
         ,
@@ -50,10 +56,20 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         //newTimer("quick", 4000)
           //.start()
         ,
+        newTimer("reminder", 3000)
+          .settings.callback( getText("remind").print() )
+          .start()
+          .wait()
+        ,
         newSelector("tank")
           //.settings.log()
           .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
+          .settings.callback( getTimer("reminder").stop() )
           .shuffle()
           .wait()
-    )
+        ,
+
+        // getSelector("shape")
+        // .wait()
+        // )
 );
