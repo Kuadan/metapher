@@ -53,7 +53,6 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
           .settings.add( 700, 400, newImage("pic4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
           .print()
         ,
-
         newTimer("reminder", 3000)
           .settings.callback( getText("remind").print() )
           .start()
@@ -65,9 +64,9 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
           .settings.callback( getTimer("reminder").stop() )
           .shuffle()
           .wait()
-        
+
 
         // getSelector("shape")
         // .wait()
-        // )
+        )
 );
