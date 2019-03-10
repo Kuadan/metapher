@@ -44,7 +44,8 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
           .wait()
         ,
         getText("test sentence")
-          .remove()
+          .settings.text("3 Sekunden...")
+          //.remove()
         ,
         newCanvas("tanks", 700, 400)
           .settings.add(  0, 0, newImage("pic1", row.picture1) ) // 0 = left of canvas
@@ -54,7 +55,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
           .print()
         ,
         newTimer("reminder", 3000)
-          .settings.callback( getText("remind").print() )
+          .settings.callback( getText("test sentence").settings.text("Timed-out... select any picture") )
           .start()
           .wait()
         ,
