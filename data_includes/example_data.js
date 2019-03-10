@@ -10,7 +10,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
             //.settings.css("position", "absolute")
             .settings.css("font-size", "40pt")
             //.settings.css("margin", "30px")
-            .settings.css("padding-left": "350pt")
+            .settings.css("padding-left", "350pt")
             .print()
           ,
         // newImage("img1", row.picture1)
