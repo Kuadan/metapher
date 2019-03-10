@@ -12,12 +12,6 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
             //.settings.css("margin", "30px")
             .settings.css("padding-left", "380pt")
             .print()
-          ,
-        newText("remind", "Too sloooooow! ")
-          .settings.css("font-size", "40pt")
-          //.settings.css("margin", "30px")
-          .settings.css("padding-left", "350pt")
-          //.print()
         ,
         // newImage("img1", row.picture1)
         //     .settings.size(300,300)
@@ -57,7 +51,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         newTimer("reminder", 4000)
           .settings.callback( getText("test sentence").settings.text("Timed-out... Bitte wählen Sie ein Bild") )
           .start()
-          .wait()
+
         ,
         newSelector("tank")
           //.settings.log()
