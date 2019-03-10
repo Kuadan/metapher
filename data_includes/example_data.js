@@ -10,7 +10,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
             //.settings.css("position", "absolute")
             .settings.css("font-size", "40pt")
             //.settings.css("margin", "30px")
-            .settings.css("padding-left", "350pt")
+            .settings.css("padding-left", "380pt")
             .print()
           ,
         newText("remind", "Too sloooooow! ")
@@ -39,7 +39,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         // .settings.add( getImage("img1"), getImage("img2"), getImage("img3"), getImage("img4") )
         // .wait()
         //,
-        newTimer("removeText",1000)
+        newTimer("removeText",2000)
           .start()
           .wait()
         ,
@@ -54,8 +54,8 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
           .settings.add( 700, 400, newImage("pic4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
           .print()
         ,
-        newTimer("reminder", 3000)
-          .settings.callback( getText("test sentence").settings.text("Timed-out... select any picture") )
+        newTimer("reminder", 4000)
+          .settings.callback( getText("test sentence").settings.text("Timed-out... Bitte wählen Sie ein Bild") )
           .start()
           .wait()
         ,
