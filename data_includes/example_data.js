@@ -44,7 +44,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
           .wait()
         ,
         getText("test sentence")
-          .settings.text("3 Sekunden...")
+          .settings.text(" ")
           //.remove()
         ,
         newCanvas("tanks", 700, 400)
