@@ -39,8 +39,8 @@ PennController("picture1",
           .start()
           .wait()
         ,
-        getText("test sentence")
-          .settings.text(" ")
+        getText("example1")
+          .settings.text("... Jetzt ein Bild auswählen..")
           //.remove()
         ,
         newImage("pic1","http://vfoss.org:9090/ibex/37_1_related_JPG.JPG")
@@ -58,15 +58,18 @@ PennController("picture1",
             .settings.add( 700, 400, getImage("pic4") )  // 300 = 100px to the right of the right edge of competitor
             .print()
         ,
-        newTimer("reminder", 2000)
-            .settings.callback( getSelector("tank").select(getText("null")) )
+        newTimer("reminder1", 2000)
+            //.settings.callback( getSelector("tank").select(getText("null")) )
+            .settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
             .start()
         ,
         newSelector("tank")
            .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
-           .settings.callback( getTimer("reminder").stop() )
+           .settings.callback( getTimer("reminder1").stop() )
+           .settings.callback( getText("example1").settings.text("... die zeit passt! ")  )
+
            .shuffle()
-           .settings.log()
+           //.settings.log()
            .wait()
       );
 
