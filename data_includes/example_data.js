@@ -13,11 +13,11 @@ PennController("instructions" ,
     ,
     newText("intro4", "Press 1, 2, 3 or 4 to start.")
     ,
-    newKey("numeric", "1234ï¿½") // Handle exception: an all-digit string would be evaluated as a charCode
+    newButton("numeric", "weiter") // Handle exception: an all-digit string would be evaluated as a charCode
+        .print()
         .wait()                 // Start when 1, 2, 3 or 4 is pressed (weird character not on keyboard)
 )
-.setOption("hideProgressBar", true)
-);
+.setOption("hideProgressBar", true);
 
 PennController.Template( PennController.GetTable("itemlist.csv"),
     row => PennController( "picture" ,
