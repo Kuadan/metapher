@@ -1,36 +1,28 @@
 PennController.Sequence( randomize("picture") );
 PennController.ResetPrefix(null);
 PennController.AddHost("http://vfoss.org:9090/ibex/");
-// Run this before every trial
-PennController.Header(
-    newVar("score", 0)          // The score Var element is part of every trial
-        .settings.global()      // Global: its value is NOT reset each time
-);
-
-// INSTRUCTIONS
-PennController( "instructions" ,
-    defaultText
-        .print()
-    ,
-    newText("intro1", "Welcome. You will see four patches of different colors aligned horizontally.")
-    ,
-    newText("intro2", "You have 1 second to select the color whose name is shown above the line of patches.")
-    ,
-    newText("intro3", "Place your fingers above the numeric keys 1, 2, 3 and 4 on your keyboard.")
-    ,
-    newText("intro4", "Press 1, 2, 3 or 4 to start.")
-    ,
-    newKey("numeric", "1234ï¿½") // Handle exception: an all-digit string would be evaluated as a charCode
-        .wait()                 // Start when 1, 2, 3 or 4 is pressed (weird character not on keyboard)
-)
-.setOption("hideProgressBar", true); // Do not show the progress bar on first screen
-
-
 PennController.Template( PennController.GetTable("itemlist.csv") ,
     row => PennController( "picture" ,
         defaultImage
             .settings.size(640, 360)
         ,
+        // INSTRUCTIONS
+PennController( "instructions" ,
+            defaultText
+                .print()
+            ,
+            newText("intro1", "Welcome. You will see four patches of different colors aligned horizontally.")
+            ,
+            newText("intro2", "You have 1 second to select the color whose name is shown above the line of patches.")
+            ,
+            newText("intro3", "Place your fingers above the numeric keys 1, 2, 3 and 4 on your keyboard.")
+            ,
+            newText("intro4", "Press 1, 2, 3 or 4 to start.")
+            ,
+            newButton("button", "weiter") // Handle exception: an all-digit string would be evaluated as a charCode
+                .wait()                 // Start when 1, 2, 3 or 4 is pressed (weird character not on keyboard)
+        );
+PennController(
         newText("test sentence", row.sentence)
             //.settings.css("position", "absolute")
             .settings.css("font-size", "40pt")
@@ -89,24 +81,3 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         // .wait()
         )
 );
-var manualSendResults = true;
-var items = [["send", "__SendResults__", {}]];
-var shuffleSequence = seq("instructions", "trial", "send", "end"); // Order of labels reflects order of definition in this script
-
-
-// FINAL SCREEN
-PennController( "end" ,
-    newText("end", "Game over! Your final score is:")
-        .print()
-    ,
-    newText("final score", "")
-        .settings.text( getVar("score") )   // Can't pass getVar("score") directly to newText
-        .settings.center()
-        .settings.bold()
-        .settings.css("font-size", "x-large") // Make it stand out
-        .print()
-    ,
-    newTimer("ever", 1)                     // Dummy timer
-        .wait()                             // Will wait forever (never started)
-)
-.setOption("countsForProgressBar", false); // No need to 'complete' this screen to fill the progress bar
