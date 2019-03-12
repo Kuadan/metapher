@@ -42,19 +42,19 @@ PennController(
   ,
       newImage("pic1","http://vfoss.org:9090/ibex/37_1_related_JPG.JPG")
             .settings.size(640, 360)
-            .print()
+            //.print()
   ,
       newImage("pic2", "http://vfoss.org:9090/ibex/37_2_JPG.JPG")
             .settings.size(640,360)
-            .print()
+            //.print()
       ,
       newImage("pic3","http://vfoss.org:9090/ibex/38_3_JPG.JPG")
             .settings.size(640,360)
-            .print()
+            //.print()
       ,
       newImage("pic4", "http://vfoss.org:9090/ibex/38_4_JPG.JPG")
             .settings.size(640,360)
-            .print()
+            //.print()
       ,
       newCanvas("tanks", 700, 400)
             .settings.add(  0, 0, getImage("pic1") ) // 0 = left of canvas
