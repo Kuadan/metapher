@@ -1,7 +1,6 @@
 PennController.Sequence( randomize("picture") );
 PennController.ResetPrefix(null);
 PennController.AddHost("http://vfoss.org:9090/ibex/");
-// INSTRUCTIONS
 PennController("instructions" ,
     defaultText
         .print()
