@@ -24,7 +24,7 @@ PennController("instructions" ,
 )
 .setOption("hideProgressBar", true);
 
-PennController("picture",
+PennController("picture1",
       defaultImage
             .settings.size(640, 360)
         ,
@@ -35,7 +35,7 @@ PennController("picture",
         ,
         newText("null"," ")
         ,
-        newTimer("removeText",1000)
+        newTimer("removeText1",1000)
           .start()
           .wait()
         ,
@@ -70,7 +70,7 @@ PennController("picture",
            .wait()
       );
 
-PennController("picture",
+PennController("picture2",
       defaultImage
             .settings.size(640, 360)
       ,
