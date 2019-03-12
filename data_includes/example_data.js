@@ -59,7 +59,6 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .wait()
         ,
         getText("test sentence")
-          .shuffle()
           .settings.text(" ")
           //.remove()
         ,
@@ -81,4 +80,5 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .shuffle()
           .wait()
         )
+PennController.Sequence( randomize("picture") );
 );
