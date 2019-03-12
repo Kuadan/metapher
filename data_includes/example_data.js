@@ -1,17 +1,19 @@
 PennController.ResetPrefix(null);
 PennController.AddHost("http://vfoss.org:9090/ibex/");
 PennController("instructions" ,
-    newText("intro1", "Welcome. You will see four patches of different colors aligned horizontally.")
-        .print()
+    defaultText
+      .print()
     ,
-    newText("intro2", "You have 1 second to select the color whose name is shown above the line of patches.")
-        .print()
+    newText("intro1", "Hallo und willkommen zu unserer Studie!")
     ,
-    newText("intro3", "Place your fingers above the numeric keys 1, 2, 3 and 4 on your keyboard.")
-        .print()
+    newText("intro2", "In diesem Experiment wirst du Teile von Sätzen lesen, die zusammen mit vier Bildern erscheinen werden.")
+        //.print()
     ,
-    newText("intro4", "Press 1, 2, 3 or 4 to start.")
-        .print()
+    newText("intro3", "Du musst entschieden, welches von den vier Bildern den Satz am besten vervollständigen könnten. Du sollst versuchen, so schnell wie möglich zu antworten! Versuch dich also, auf deine Intuition zu verlassen.")
+        //.print()
+    ,
+    newText("intro4", "Du wirst zwei Übungen dafür bekommen, bevor es mit dem eigentlichen Experiment losgeht. Klicke auf ‚weiter’ um mit den Übungen anzufangen.")
+        //.print()
     ,
     newButton("numeric", "weiter") // Handle exception: an all-digit string would be evaluated as a charCode
         .print()
@@ -19,7 +21,7 @@ PennController("instructions" ,
 )
 .setOption("hideProgressBar", true);
 
-PennController.Sequence( randomize("picture") );
+//PennController.Sequence( randomize("picture") );
 PennController.Template( PennController.GetTable("itemlist.csv"),
     row => PennController( "picture" ,
         defaultImage
