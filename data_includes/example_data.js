@@ -2,7 +2,7 @@ PennController.Sequence( randomize("picture") );
 PennController.ResetPrefix(null);
 PennController.AddHost("http://vfoss.org:9090/ibex/");
 // INSTRUCTIONS
-PennController( "instructions" ,
+PennController("instructions" ,
     defaultText
         .print()
     ,
@@ -78,8 +78,8 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .wait()
         )
 );
-PennController( "end" ,
+PennController("end" ,
     newText("end", "Game over! Your final score is:")
-        .print()                        
+        .print()
 )
 .setOption("countsForProgressBar", false); // No need to 'complete' this screen to fill the progress bar
