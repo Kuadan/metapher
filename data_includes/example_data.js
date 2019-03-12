@@ -65,14 +65,11 @@ PennController("picture1",
         ,
         newSelector("tank")
            .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
-           .settings.callback(
-                    getTimer("reminder1").stop()
-                    //getText("example1").settings.text("... die zeit passt! ")  
-           )
-
+           .settings.callback(  getTimer("reminder1").stop() )
            .shuffle()
            //.settings.log()
            .wait()
+           ,
        newTimer("pause", 2000)
                .start()
                .wait()
