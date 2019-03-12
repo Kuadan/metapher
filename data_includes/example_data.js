@@ -1,8 +1,8 @@
 PennController.ResetPrefix(null);
 PennController.AddHost("http://vfoss.org:9090/ibex/");
-PennController.Sequence( "introductions", randomize("picture") );
+PennController.Sequence( "instructions1", "picture1", "picture2", "intructions", randomize("picture") );
 
-PennController("instructions" ,
+PennController("instructions1" ,
     defaultText
       .settings.css("font-size", "15pt")
       .settings.center()
@@ -106,7 +106,7 @@ PennController("picture2",
            .wait()
        );
 
-PennController("instructions" ,
+PennController("instructions2" ,
     defaultText
       .settings.css("font-size", "15pt")
       .settings.center()
