@@ -58,8 +58,7 @@ PennController(
      newSelector("tank")
            .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
            .wait()
-       )
-);
+       );
 
 //PennController.Sequence( randomize("picture") );
 PennController.Template( PennController.GetTable("itemlist.csv"),
