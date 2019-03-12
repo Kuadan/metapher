@@ -33,7 +33,7 @@ PennController(
     ,
       newText("example1", "Das Mädchen meint dass Köstlichkeit und ... absolut identisch sind")
             .settings.css("font-size", "40pt")
-            .settings.css("padding-left", "380pt")
+            .settings.center()
             .print()
       ,
       newImage("pic1","http://vfoss.org:9090/ibex/37_1_related_JPG.JPG")
