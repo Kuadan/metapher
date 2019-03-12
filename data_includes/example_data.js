@@ -140,6 +140,9 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
         // .settings.add( getImage("img1"), getImage("img2"), getImage("img3"), getImage("img4") )
         // .wait()
         //,
+        ,
+        newText("null"," ")
+        ,
         newTimer("removeText",1500)
           .start()
           .wait()
@@ -155,8 +158,9 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .settings.add( 700, 400, newImage("pic4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
           .print()
         ,
-        newTimer("reminder", 4000)
-          .settings.callback( getText("test sentence").settings.text("Zu langsam!") )
+        newTimer("reminder", 3000)
+          //.settings.callback( getText("test sentence").settings.text("Zu langsam!") )
+          .settings.callback( getSelector("tank").select(getText("null")) )
           .start()
         ,
         newSelector("tank")
@@ -164,6 +168,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
           .settings.callback( getTimer("reminder").stop() )
           .shuffle()
+          .settings.log()
           .wait()
         )
 );
