@@ -2,16 +2,17 @@ PennController.Sequence( randomize("picture") );
 PennController.ResetPrefix(null);
 PennController.AddHost("http://vfoss.org:9090/ibex/");
 PennController("instructions" ,
-    defaultText
+    newText("intro1", "Welcome. You will see four patches of different colors aligned horizontally.")
         .print()
     ,
-    newText("intro1", "Welcome. You will see four patches of different colors aligned horizontally.")
-    ,
     newText("intro2", "You have 1 second to select the color whose name is shown above the line of patches.")
+        .print()
     ,
     newText("intro3", "Place your fingers above the numeric keys 1, 2, 3 and 4 on your keyboard.")
+        .print()
     ,
     newText("intro4", "Press 1, 2, 3 or 4 to start.")
+        .print()
     ,
     newButton("numeric", "weiter") // Handle exception: an all-digit string would be evaluated as a charCode
         .print()
