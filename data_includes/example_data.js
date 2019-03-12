@@ -89,3 +89,24 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         // .wait()
         )
 );
+var manualSendResults = true;
+var items = [["send", "__SendResults__", {}]];
+var shuffleSequence = seq("instructions", "trial", "send", "end"); // Order of labels reflects order of definition in this script
+
+
+// FINAL SCREEN
+PennController( "end" ,
+    newText("end", "Game over! Your final score is:")
+        .print()
+    ,
+    newText("final score", "")
+        .settings.text( getVar("score") )   // Can't pass getVar("score") directly to newText
+        .settings.center()
+        .settings.bold()
+        .settings.css("font-size", "x-large") // Make it stand out
+        .print()
+    ,
+    newTimer("ever", 1)                     // Dummy timer
+        .wait()                             // Will wait forever (never started)
+)
+.setOption("countsForProgressBar", false); // No need to 'complete' this screen to fill the progress bar
