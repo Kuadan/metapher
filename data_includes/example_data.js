@@ -72,7 +72,6 @@ PenController(
     //.settings.log()
             .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
             .settings.callback( getTimer("reminder").stop() )
-            .shuffle()
             .wait()
   );
 
