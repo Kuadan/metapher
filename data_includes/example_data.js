@@ -11,7 +11,6 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         //,
           newText("intro", "Hallo und willkommen zu unserer Studie! In diesem Experiment wirst du Teile von Sätzen lesen, die zusammen mit vier Bildern erscheinen werden. Du musst entschieden, welches von den vier Bildern den Satz am besten vervollständigen könnten. Du sollst versuchen, so schnell wie möglich zu antworten! Versuch dich also, auf deine Intuition zu verlassen.Du wirst zwei Übungen dafür bekommen, bevor es mit dem eigentlichen Experiment losgeht. Klicke auf ‚weiter’ um mit den Übungen anzufangen.")
               .print()
-              .remove()
         ,
           newButton("continue", "Continue")
               .print()
