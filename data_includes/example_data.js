@@ -30,29 +30,46 @@ PennController("instructions" ,
 PennController(
       defaultImage
             .settings.size(640, 360)
-    ,
-      newText("example1", "Das Mädchen meint dass Köstlichkeit und ... absolut identisch sind")
+        ,
+        newText("example1", "Das Mädchen meint liebt Süßgikeit und isst gern...")
             .settings.css("font-size", "40pt")
             .settings.center()
             .print()
-      ,
-      newImage("pic1","http://vfoss.org:9090/ibex/37_1_related_JPG.JPG")
-      ,
-      newImage("pic2", "http://vfoss.org:9090/ibex/37_2_JPG.JPG")
-      ,
-      newImage("pic3","http://vfoss.org:9090/ibex/37_3_JPG.JPG")
-      ,
-      newImage("pic4", "http://vfoss.org:9090/ibex/37_4_JPG.JPG")
-      ,
-      newCanvas("tanks", 700, 400)
+        ,
+        newText("null"," ")
+        ,
+        newTimer("removeText",1000)
+          .start()
+          .wait()
+        ,
+        getText("test sentence")
+          .settings.text(" ")
+          //.remove()
+        ,
+        newImage("pic1","http://vfoss.org:9090/ibex/37_1_related_JPG.JPG")
+        ,
+        newImage("pic2", "http://vfoss.org:9090/ibex/37_2_JPG.JPG")
+        ,
+        newImage("pic3","http://vfoss.org:9090/ibex/37_3_JPG.JPG")
+        ,
+        newImage("pic4", "http://vfoss.org:9090/ibex/37_4_JPG.JPG")
+        ,
+        newCanvas("tanks", 700, 400)
             .settings.add(  0, 0, getImage("pic1") ) // 0 = left of canvas
             .settings.add( 700, 0, getImage("pic2") )  // 300 = 100px to the right of the right edge of competitor
             .settings.add(   0, 400, getImage("pic3") ) // 0 = left of canvas
             .settings.add( 700, 400, getImage("pic4") )  // 300 = 100px to the right of the right edge of competitor
             .print()
-      ,
-     newSelector("tank")
+        ,
+        newTimer("reminder", 2000)
+            .settings.callback( getSelector("tank").select(getText("null")) )
+            .start()
+        ,
+        newSelector("tank")
            .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
+           .settings.callback( getTimer("reminder").stop() )
+           .shuffle()
+           .settings.log()
            .wait()
       );
 
@@ -119,7 +136,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
             //.settings.css("margin", "30px")
             .settings.css("padding-left", "380pt")
             .print()
-        
+
         // newImage("img1", row.picture1)
         //     .settings.size(300,300)
         //     .print()
@@ -143,7 +160,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
         ,
         newText("null"," ")
         ,
-        newTimer("removeText",1500)
+        newTimer("removeText",1000)
           .start()
           .wait()
         ,
@@ -158,7 +175,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .settings.add( 700, 400, newImage("pic4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
           .print()
         ,
-        newTimer("reminder", 3000)
+        newTimer("reminder", 2000)
           //.settings.callback( getText("test sentence").settings.text("Zu langsam!") )
           .settings.callback( getSelector("tank").select(getText("null")) )
           .start()
