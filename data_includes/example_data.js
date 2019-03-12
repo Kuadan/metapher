@@ -1,23 +1,12 @@
 PennController.Sequence( randomize("picture") );
 PennController.ResetPrefix(null);
 PennController.AddHost("http://vfoss.org:9090/ibex/");
-PennController.Template( PennController.GetTable("itemlist.csv") ,
+PennController.Template( PennController.GetTable("itemlist.csv"),
     row => PennController( "picture" ,
         defaultImage
             .settings.size(640, 360)
         ,
-    //  defaultText
-          //.print()
-        //,
-          newText("intro", "Hallo und willkommen zu unserer Studie! In diesem Experiment wirst du Teile von Sätzen lesen, die zusammen mit vier Bildern erscheinen werden. Du musst entschieden, welches von den vier Bildern den Satz am besten vervollständigen könnten. Du sollst versuchen, so schnell wie möglich zu antworten! Versuch dich also, auf deine Intuition zu verlassen.Du wirst zwei Übungen dafür bekommen, bevor es mit dem eigentlichen Experiment losgeht. Klicke auf ‚weiter’ um mit den Übungen anzufangen.")
-              .print()
-        ,
-          newButton("continue", "Continue")
-              .print()
-              .wait()
-          
-        ,
-          newText("test sentence", row.sentence)
+        newText("test sentence", row.sentence)
             //.settings.css("position", "absolute")
             .settings.css("font-size", "40pt")
             //.settings.css("margin", "30px")
@@ -62,7 +51,6 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         newTimer("reminder", 4000)
           .settings.callback( getText("test sentence").settings.text("Zu langsam!") )
           .start()
-
         ,
         newSelector("tank")
           //.settings.log()
@@ -70,8 +58,5 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
           .settings.callback( getTimer("reminder").stop() )
           .shuffle()
           .wait()
-
-        // getSelector("shape")
-        // .wait()
         )
 );
