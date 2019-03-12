@@ -60,18 +60,18 @@ PennController(
       defaultImage
             .settings.size(640, 360)
       ,
-      newText("example2", "Der Patient bedauert dass Betrübnis und... Erscheinungen der Krankheit sind.")
-            .settings.css("font-size", "15pt")
+      newText("example2", "Die Apothekerin bedauert dass Vollbeschäftigung und ... am Leben nicht zusammenzupassen scheinen.")
+            .settings.css("font-size", "40pt")
             .settings.center()
             .print()
       ,
-      newImage("pic5","http://vfoss.org:9090/ibex/39_1_JPG.JPG")
+      newImage("pic5","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
       ,
-      newImage("pic6", "http://vfoss.org:9090/ibex/39_2_JPG.JPG")
+      newImage("pic6", "http://vfoss.org:9090/ibex/38_2_JPG.JPG")
       ,
-      newImage("pic7","http://vfoss.org:9090/ibex/39_3_JPG.JPG")
+      newImage("pic7","http://vfoss.org:9090/ibex/38_3_JPG.JPG")
       ,
-      newImage("pic8", "http://vfoss.org:9090/ibex/39_4_JPG.JPG")
+      newImage("pic8", "http://vfoss.org:9090/ibex/38_4_JPG.JPG")
       ,
       newCanvas("tanks", 700, 400)
             .settings.add(  0, 0, getImage("pic5") ) // 0 = left of canvas
