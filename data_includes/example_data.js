@@ -1,5 +1,7 @@
 PennController.ResetPrefix(null);
 PennController.AddHost("http://vfoss.org:9090/ibex/");
+PennController.Sequence( "introductions", randomize("picture") );
+
 PennController("instructions" ,
     defaultText
       .settings.css("font-size", "15pt")
@@ -126,7 +128,7 @@ PennController("instructions" ,
 )
 .setOption("hideProgressBar", true);
 
-PennController.Sequence( randomize("picture") );
+
 PennController.Template( PennController.GetTable("itemlist.csv"),
     row => PennController( "picture" ,
         defaultImage
