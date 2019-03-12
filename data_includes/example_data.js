@@ -9,17 +9,14 @@ PennController("instructions" ,
         newText("intro1", "Hallo und willkommen zu unserer Studie!")
     ,
         newText("intro2", "In diesem Experiment wirst du Teile von Sätzen lesen, die zusammen mit vier Bildern erscheinen werden.")
-        //.print()
     ,
         newText("intro3", "Du musst entschieden, welches von den vier Bildern den Satz am besten vervollständigen könnten.")
-        //.print()
     ,
         newText("intro4", "Du sollst versuchen, so schnell wie möglich zu antworten! Versuch dich also, auf deine Intuition zu verlassen.")
     ,
         newText("intro5", "Du wirst zwei Übungen dafür bekommen, bevor es mit dem eigentlichen Experiment losgeht.")
     ,
         newText("intro6", "Klicke auf ‚weiter’ um mit den Übungen anzufangen.")
-        //.print()")
     ,
         newButton("button", "weiter") // Handle exception: an all-digit string would be evaluated as a charCode
           .print()
@@ -27,7 +24,7 @@ PennController("instructions" ,
 )
 .setOption("hideProgressBar", true);
 
-PennController(
+PennController("picture",
       defaultImage
             .settings.size(640, 360)
         ,
@@ -73,7 +70,7 @@ PennController(
            .wait()
       );
 
-PennController(
+PennController("picture",
       defaultImage
             .settings.size(640, 360)
       ,
