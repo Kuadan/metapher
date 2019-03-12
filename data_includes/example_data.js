@@ -71,10 +71,10 @@ PennController(
       newImage("pic8", "http://vfoss.org:9090/ibex/38_4_JPG.JPG")
       ,
       newCanvas("tanks", 700, 400)
-            .settings.add(  0, 0, getImage("pic1") ) // 0 = left of canvas
-            .settings.add( 700, 0, getImage("pic2") )  // 300 = 100px to the right of the right edge of competitor
-            .settings.add(   0, 400, getImage("pic3") ) // 0 = left of canvas
-            .settings.add( 700, 400, getImage("pic4") )  // 300 = 100px to the right of the right edge of competitor
+            .settings.add(  0, 0, getImage("pic5") ) // 0 = left of canvas
+            .settings.add( 700, 0, getImage("pic6") )  // 300 = 100px to the right of the right edge of competitor
+            .settings.add(   0, 400, getImage("pic7") ) // 0 = left of canvas
+            .settings.add( 700, 400, getImage("pic8") )  // 300 = 100px to the right of the right edge of competitor
             .print()
       ,
      newSelector("tank")
