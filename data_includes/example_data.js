@@ -80,5 +80,4 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .shuffle()
           .wait()
         )
-PennController.Sequence( randomize("picture") );
 );
