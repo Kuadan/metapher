@@ -54,19 +54,21 @@ PennController(
      newSelector("tank")
            .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
            .wait()
-      ,
+      );
+
+PennController(
       newText("example2", "Die Apothekerin bedauert dass Vollbeschäftigung und ... am Leben nicht zusammenzupassen scheinen.")
             .settings.css("font-size", "15pt")
             .settings.css("padding-left", "380pt")
             .print()
       ,
-      newImage("pic1","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
+      newImage("pic5","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
       ,
-      newImage("pic2", "http://vfoss.org:9090/ibex/38_2_JPG.JPG")
+      newImage("pic6", "http://vfoss.org:9090/ibex/38_2_JPG.JPG")
       ,
-      newImage("pic3","http://vfoss.org:9090/ibex/38_3_JPG.JPG")
+      newImage("pic7","http://vfoss.org:9090/ibex/38_3_JPG.JPG")
       ,
-      newImage("pic4", "http://vfoss.org:9090/ibex/38_4_JPG.JPG")
+      newImage("pic8", "http://vfoss.org:9090/ibex/38_4_JPG.JPG")
       ,
       newCanvas("tanks", 700, 400)
             .settings.add(  0, 0, getImage("pic1") ) // 0 = left of canvas
@@ -76,7 +78,7 @@ PennController(
             .print()
       ,
      newSelector("tank")
-           .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
+           .settings.add( getImage("pic5") , getImage("pic6"), getImage("pic7"), getImage("pic8") )
            .wait()
        );
 
