@@ -6,22 +6,25 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         defaultImage
             .settings.size(640, 360)
         ,
-PennController( "instructions",
-      defaultText
-        .print()
-        ,
+    //  defaultText
+          //.print()
+        //,
           newText("intro1", "Welcome. You will see four patches of different colors aligned horizontally.")
+              .print()
         ,
           newText("intro2", "You have 1 second to select the color whose name is shown above the line of patches.")
+              .print()
         ,
           newText("intro3", "Place your fingers above the numeric keys 1, 2, 3 and 4 on your keyboard.")
+              .print()
         ,
           newText("intro4", "Press 1, 2, 3 or 4 to start.")
+              .print()
         ,
           newButton("continue", "Continue")
               .print()
               .wait()
-              .settings.bold()
+              .remove()
         ,
           newText("test sentence", row.sentence)
             //.settings.css("position", "absolute")
