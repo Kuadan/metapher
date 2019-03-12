@@ -126,7 +126,7 @@ PennController("instructions" ,
 )
 .setOption("hideProgressBar", true);
 
-//PennController.Sequence( randomize("picture") );
+PennController.Sequence( randomize("picture") );
 PennController.Template( PennController.GetTable("itemlist.csv"),
     row => PennController( "picture" ,
         defaultImage
