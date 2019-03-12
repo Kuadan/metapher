@@ -74,7 +74,6 @@ PenController(
             .settings.callback( getTimer("reminder").stop() )
             .shuffle()
             .wait()
-  )
   );
 
 //PennController.Sequence( randomize("picture") );
