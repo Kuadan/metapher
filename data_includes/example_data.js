@@ -59,6 +59,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .wait()
         ,
         getText("test sentence")
+          .shuffle()
           .settings.text(" ")
           //.remove()
         ,
