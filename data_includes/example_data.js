@@ -30,7 +30,6 @@ PennController("instructions" ,
 PennController(
       newText("example1", "Das Mädchen meint dass Köstlichkeit und ... absolut identisch sind")
             .settings.css("font-size", "40pt")
-            .settings.css("padding-left", "380pt")
             .print()
   ,
       newTimer("removeText",1500)
