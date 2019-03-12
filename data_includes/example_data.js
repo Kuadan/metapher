@@ -74,7 +74,7 @@ PenController(
             .settings.callback( getTimer("reminder").stop() )
             .shuffle()
             .wait()
-  )
+  ;
 
 //PennController.Sequence( randomize("picture") );
 PennController.Template( PennController.GetTable("itemlist.csv"),
