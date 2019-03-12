@@ -57,6 +57,9 @@ PennController(
       );
 
 PennController(
+      defaultImage
+            .settings.size(640, 360)
+      ,
       newText("example2", "Der Patient bedauert dass Betrübnis und... Erscheinungen der Krankheit sind.")
             .settings.css("font-size", "15pt")
             .settings.center()
@@ -82,6 +85,29 @@ PennController(
            .wait()
        );
 
+PennController("instructions" ,
+    defaultText
+      .settings.css("font-size", "15pt")
+      .settings.center()
+      .print()
+    ,
+        newText("intro1", "Das war die Übung!")
+    ,
+        newText("intro2", "Jetzt werden wir mit dem Experiment starten.")
+        //.print()
+    ,
+        newText("intro3", "Wenn du noch Fragen hast, wende dich bitte jetzt an die Experimentleiterin.")
+        //.print()
+    ,
+        newText("intro4", "Ansonsten kannst du auf ‚weiter’ klicken.")
+    ,
+        newButton("button", "weiter") // Handle exception: an all-digit string would be evaluated as a charCode
+          .print()
+          .wait()                 // Start when 1, 2, 3 or 4 is pressed (weird character not on keyboard)
+)
+.setOption("hideProgressBar", true);
+
+)
 //PennController.Sequence( randomize("picture") );
 PennController.Template( PennController.GetTable("itemlist.csv"),
     row => PennController( "picture" ,
