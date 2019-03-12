@@ -15,7 +15,7 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
           newButton("continue", "Continue")
               .print()
               .wait()
-              .remove()
+          
         ,
           newText("test sentence", row.sentence)
             //.settings.css("position", "absolute")
