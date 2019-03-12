@@ -29,7 +29,6 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
             .settings.css("font-size", "40pt")
             //.settings.css("margin", "30px")
             .settings.css("padding-left", "380pt")
-            .shuffle()
             .print()
         ,
         // newImage("img1", row.picture1)
