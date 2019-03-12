@@ -2,6 +2,7 @@ PennController.ResetPrefix(null);
 PennController.AddHost("http://vfoss.org:9090/ibex/");
 PennController("instructions" ,
     defaultText
+      .settings.css("font-size", "40pt")
       .print()
     ,
     newText("intro1", "Hallo und willkommen zu unserer Studie!")
