@@ -1,6 +1,6 @@
 PennController.ResetPrefix(null);
 PennController.AddHost("http://vfoss.org:9090/ibex/");
-PennController.Sequence( "instructions1", "picture1", "picture2", "intructions", randomize("picture") );
+PennController.Sequence( "instructions1", "picture1", "picture2", "intructions2", randomize("picture") );
 
 PennController("instructions1" ,
     defaultText
