@@ -1,4 +1,3 @@
-//PennController.Sequence( randomize("picture") );
 PennController.ResetPrefix(null);
 PennController.AddHost("http://vfoss.org:9090/ibex/");
 PennController("instructions" ,
@@ -19,6 +18,7 @@ PennController("instructions" ,
         .wait()                 // Start when 1, 2, 3 or 4 is pressed (weird character not on keyboard)
 )
 .setOption("hideProgressBar", true);
+//PennController.Sequence( randomize("picture") );
 PennController.Template( PennController.GetTable("itemlist.csv"),
     row => PennController( "picture" ,
         defaultImage
@@ -29,6 +29,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
             .settings.css("font-size", "40pt")
             //.settings.css("margin", "30px")
             .settings.css("padding-left", "380pt")
+            .shuffle()
             .print()
         ,
         // newImage("img1", row.picture1)
