@@ -28,25 +28,45 @@ PennController("instructions" ,
 .setOption("hideProgressBar", true);
 
 PennController(
+      defaultImage
+            .settings.size(640, 360)
+    ,
       newText("example1", "Das Mädchen meint dass Köstlichkeit und ... absolut identisch sind")
             .settings.css("font-size", "40pt")
+            .settings.css("padding-left", "380pt")
             .print()
       ,
       newImage("pic1","http://vfoss.org:9090/ibex/37_1_related_JPG.JPG")
-            .settings.size(640, 360)
-            //.print()
       ,
       newImage("pic2", "http://vfoss.org:9090/ibex/37_2_JPG.JPG")
-            .settings.size(640,360)
-            //.print()
+      ,
+      newImage("pic3","http://vfoss.org:9090/ibex/37_3_JPG.JPG")
+      ,
+      newImage("pic4", "http://vfoss.org:9090/ibex/37_4_JPG.JPG")
+      ,
+      newCanvas("tanks", 700, 400)
+            .settings.add(  0, 0, getImage("pic1") ) // 0 = left of canvas
+            .settings.add( 700, 0, getImage("pic2") )  // 300 = 100px to the right of the right edge of competitor
+            .settings.add(   0, 400, getImage("pic3") ) // 0 = left of canvas
+            .settings.add( 700, 400, getImage("pic4") )  // 300 = 100px to the right of the right edge of competitor
+            .print()
+      ,
+     newSelector("tank")
+           .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
+           .wait()
+      ,
+      newText("example2", "Die Apothekerin bedauert dass Vollbeschäftigung und ... am Leben nicht zusammenzupassen scheinen.")
+            .settings.css("font-size", "15pt")
+            .settings.css("padding-left", "380pt")
+            .print()
+      ,
+      newImage("pic1","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
+      ,
+      newImage("pic2", "http://vfoss.org:9090/ibex/38_2_JPG.JPG")
       ,
       newImage("pic3","http://vfoss.org:9090/ibex/38_3_JPG.JPG")
-            .settings.size(640,360)
-            //.print()
       ,
       newImage("pic4", "http://vfoss.org:9090/ibex/38_4_JPG.JPG")
-            .settings.size(640,360)
-            //.print()
       ,
       newCanvas("tanks", 700, 400)
             .settings.add(  0, 0, getImage("pic1") ) // 0 = left of canvas
