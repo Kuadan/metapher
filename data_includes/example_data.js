@@ -6,24 +6,24 @@ PennController.Template( PennController.GetTable("itemlist.csv") ,
         defaultImage
             .settings.size(640, 360)
         ,
-        // INSTRUCTIONS
-PennController( "instructions" ,
-            defaultText
-                .print()
-            ,
-            newText("intro1", "Welcome. You will see four patches of different colors aligned horizontally.")
-            ,
-            newText("intro2", "You have 1 second to select the color whose name is shown above the line of patches.")
-            ,
-            newText("intro3", "Place your fingers above the numeric keys 1, 2, 3 and 4 on your keyboard.")
-            ,
-            newText("intro4", "Press 1, 2, 3 or 4 to start.")
-            ,
-            newButton("button", "weiter") // Handle exception: an all-digit string would be evaluated as a charCode
-                .wait()                 // Start when 1, 2, 3 or 4 is pressed (weird character not on keyboard)
-        );
-PennController(
-        newText("test sentence", row.sentence)
+PennController( "instructions",
+      defaultText
+        .print()
+        ,
+          newText("intro1", "Welcome. You will see four patches of different colors aligned horizontally.")
+        ,
+          newText("intro2", "You have 1 second to select the color whose name is shown above the line of patches.")
+        ,
+          newText("intro3", "Place your fingers above the numeric keys 1, 2, 3 and 4 on your keyboard.")
+        ,
+          newText("intro4", "Press 1, 2, 3 or 4 to start.")
+        ,
+          newButton("continue", "Continue")
+              .print()
+              .wait()
+              .settings.bold()
+        ,
+          newText("test sentence", row.sentence)
             //.settings.css("position", "absolute")
             .settings.css("font-size", "40pt")
             //.settings.css("margin", "30px")
