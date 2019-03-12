@@ -31,19 +31,11 @@ PennController(
       newText("example1", "Das Mädchen meint dass Köstlichkeit und ... absolut identisch sind")
             .settings.css("font-size", "40pt")
             .print()
-  ,
-      newTimer("removeText",1500)
-            .start()
-            .wait()
-  ,
-      getText("test sentence")
-            .settings.text(" ")
-    //.remove()
-  ,
+      ,
       newImage("pic1","http://vfoss.org:9090/ibex/37_1_related_JPG.JPG")
             .settings.size(640, 360)
             //.print()
-  ,
+      ,
       newImage("pic2", "http://vfoss.org:9090/ibex/37_2_JPG.JPG")
             .settings.size(640,360)
             //.print()
@@ -62,18 +54,12 @@ PennController(
             .settings.add(   0, 400, getImage("pic3") ) // 0 = left of canvas
             .settings.add( 700, 400, getImage("pic4") )  // 300 = 100px to the right of the right edge of competitor
             .print()
-  ,
-     newTimer("reminder", 4000)
-            .settings.callback( getText("test sentence").settings.text("Zu langsam!") )
-            .start()
-  ,
+      ,
      newSelector("tank")
-    //.settings.log()
            .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
-           .settings.callback( getTimer("reminder").stop() )
            .wait()
        )
-;
+);
 
 //PennController.Sequence( randomize("picture") );
 PennController.Template( PennController.GetTable("itemlist.csv"),
