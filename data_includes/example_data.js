@@ -111,7 +111,7 @@ PennController("picture2",
       ,
       newTimer("reminder2", 3000)
           .settings.callback( getSelector("tank").select(getText("null")) )
-          .settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
+          .settings.callback( getText("example2").settings.text("... zu langsam, next ")  )
           .start()
       ,
      newSelector("tank")
@@ -141,7 +141,7 @@ PennController("instructions2" ,
 
 
 PennController.Template( PennController.GetTable("itemlist.csv"),
-    row => PennController( "picture2" ,
+    row => PennController( "picture" ,
         defaultImage
             .settings.size(640, 360)
         ,
@@ -168,7 +168,8 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
         ,
         newTimer("reminder2", 3000)
           //.settings.callback( getText("test sentence").settings.text("Zu langsam!") )
-          .settings.callback( getSelector("tank").select(getText("null2")) )
+          .settings.callback( getSelector("tank").select(getText("null")) )
+          .settings.callback( getText("test sentence").settings.text("... zu langsam, next ")  )
           .start()
         ,
         newSelector("tank")
