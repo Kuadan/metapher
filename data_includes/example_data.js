@@ -87,11 +87,11 @@ PennController("picture2",
       ,
       newText("null"," ")
       ,
-      newTimer("removeText1",1000)
+      newTimer("removeText2",1000)
             .start()
             .wait()
       ,
-      getText("example1")
+      getText("example2")
             .settings.text("... Jetzt ein Bild auswählen..")
       ,
       newImage("pic5","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
@@ -109,7 +109,7 @@ PennController("picture2",
             .settings.add( 700, 400, getImage("pic8") )
             .print()
       ,
-      newTimer("reminder1", 2000)
+      newTimer("reminder2", 2000)
           //.settings.callback( getSelector("tank").select(getText("null")) )
           .settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
           .start()
