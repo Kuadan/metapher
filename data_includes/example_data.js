@@ -61,7 +61,7 @@ PennController("picture1",
           ,
           newTimer("reminder1", 3000)
               .settings.callback( getSelector("tank").select(getText("null")) )
-              .settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
+              //.settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
               .start()
           ,
           newSelector("tank")
@@ -117,6 +117,8 @@ PennController("picture2",
       ,
      newSelector("tank")
            .settings.add( getImage("pic5") , getImage("pic6"), getImage("pic7"), getImage("pic8") )
+           .settings.callback( getTimer("reminder2").stop() )
+           .shuffle()
            .wait()
        );
 
