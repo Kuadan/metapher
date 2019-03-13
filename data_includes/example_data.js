@@ -21,6 +21,7 @@ PennController("instructions1" ,
         newText("intro6", "Klicke auf ‚weiter’ um mit den Übungen anzufangen.")
     ,
         newButton("button", "weiter")
+          .print()
           .wait()
 )
 .setOption("hideProgressBar", true);
@@ -165,7 +166,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .settings.add(  0, 0, newImage("pic1", row.picture1) )
           .settings.add( 700, 0, newImage("pic2", row.picture2) )
           .settings.add(   0, 400, newImage("pic3", row.picture3) )
-          .settings.add( 700, 400, newImage("pic4", row.picture4) )  
+          .settings.add( 700, 400, newImage("pic4", row.picture4) )
           .print()
         ,
         newTimer("reminder", 2000)
