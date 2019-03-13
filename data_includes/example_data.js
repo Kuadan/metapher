@@ -95,13 +95,13 @@ PennController("picture2",
       getText("example2")
             .settings.text("... Jetzt ein Bild auswählen..")
       ,
-      newImage("pic5","http://vfoss.org:9090/ibex/41_1_related_JPG.JPG")
+      newImage("pic5","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
       ,
-      newImage("pic6", "http://vfoss.org:9090/ibex/41_2_related_JPG.JPG")
+      newImage("pic6", "http://vfoss.org:9090/ibex/38_2_JPG.JPG")
       ,
-      newImage("pic7","http://vfoss.org:9090/ibex/41_3_JPG.JPG")
+      newImage("pic7","http://vfoss.org:9090/ibex/38_3_JPG.JPG")
       ,
-      newImage("pic8", "http://vfoss.org:9090/ibex/41_4_JPG.JPG")
+      newImage("pic8", "http://vfoss.org:9090/ibex/38_4_JPG.JPG")
       ,
       newCanvas("tanks", 700, 400)
             .settings.add(  0, 0, getImage("pic5") )
@@ -140,13 +140,13 @@ PennController("picture2",
                  getText("example3")
                      .settings.text("... Jetzt ein Bild auswählen..")
                  ,
-                 newImage("pic9","http://vfoss.org:9090/ibex/37_1_related_JPG.JPG")
+                 newImage("pic9","http://vfoss.org:9090/ibex/48_1_related_JPG.JPG")
                  ,
-                 newImage("pic10", "http://vfoss.org:9090/ibex/37_2_JPG.JPG")
+                 newImage("pic10", "http://vfoss.org:9090/ibex/48_2_related_JPG.JPG")
                  ,
-                 newImage("pic11","http://vfoss.org:9090/ibex/37_3_JPG.JPG")
+                 newImage("pic11","http://vfoss.org:9090/ibex/48_3_JPG.JPG")
                  ,
-                 newImage("pic12", "http://vfoss.org:9090/ibex/37_4_JPG.JPG")
+                 newImage("pic12", "http://vfoss.org:9090/ibex/48_4_JPG.JPG")
                  ,
                  newCanvas("tanks", 700, 400)
                      .settings.add(  0, 0, getImage("pic9") )
