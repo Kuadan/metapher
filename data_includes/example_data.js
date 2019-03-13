@@ -37,7 +37,7 @@ PennController("picture1",
         ,
         newText("null"," ")
         ,
-        newTimer("removeText1",1000)
+        newTimer("removeText1",1500)
             .start()
             .wait()
         ,
@@ -59,7 +59,7 @@ PennController("picture1",
             .settings.add( 700, 400, getImage("pic4") )
             .print()
         ,
-        newTimer("reminder1", 2000)
+        newTimer("reminder1", 3000)
             //.settings.callback( getSelector("tank").select(getText("null")) )
             .settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
             .start()
@@ -87,7 +87,7 @@ PennController("picture2",
       ,
       newText("null"," ")
       ,
-      newTimer("removeText2",1000)
+      newTimer("removeText2",1500)
             .start()
             .wait()
       ,
@@ -109,7 +109,7 @@ PennController("picture2",
             .settings.add( 700, 400, getImage("pic8") )
             .print()
       ,
-      newTimer("reminder2", 2000)
+      newTimer("reminder2", 3000)
           //.settings.callback( getSelector("tank").select(getText("null")) )
           .settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
           .start()
@@ -169,7 +169,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .settings.add( 700, 400, newImage("pic4", row.picture4) )
           .print()
         ,
-        newTimer("reminder", 2000)
+        newTimer("reminder", 3000)
           //.settings.callback( getText("test sentence").settings.text("Zu langsam!") )
           .settings.callback( getSelector("tank").select(getText("null")) )
           .start()
