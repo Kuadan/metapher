@@ -4,7 +4,7 @@ PennController.Sequence( "instructions1", "picture1", "picture2", "instructions2
 
 PennController("instructions1" ,
     defaultText
-      .settings.css("font-size", "15pt")
+      .settings.css("font-size", "25pt")
       .settings.center()
       .print()
     ,
@@ -20,9 +20,8 @@ PennController("instructions1" ,
     ,
         newText("intro6", "Klicke auf ‚weiter’ um mit den Übungen anzufangen.")
     ,
-        newButton("button", "weiter") // Handle exception: an all-digit string would be evaluated as a charCode
-          .print()
-          .wait()                 // Start when 1, 2, 3 or 4 is pressed (weird character not on keyboard)
+        newButton("button", "weiter")
+          .wait()
 )
 .setOption("hideProgressBar", true);
 
@@ -38,12 +37,11 @@ PennController("picture1",
         newText("null"," ")
         ,
         newTimer("removeText1",1000)
-          .start()
-          .wait()
+            .start()
+            .wait()
         ,
         getText("example1")
-          .settings.text("... Jetzt ein Bild auswählen..")
-          //.remove()
+            .settings.text("... Jetzt ein Bild auswählen..")
         ,
         newImage("pic1","http://vfoss.org:9090/ibex/37_1_related_JPG.JPG")
         ,
@@ -54,10 +52,10 @@ PennController("picture1",
         newImage("pic4", "http://vfoss.org:9090/ibex/37_4_JPG.JPG")
         ,
         newCanvas("tanks", 700, 400)
-            .settings.add(  0, 0, getImage("pic1") ) // 0 = left of canvas
-            .settings.add( 700, 0, getImage("pic2") )  // 300 = 100px to the right of the right edge of competitor
-            .settings.add(   0, 400, getImage("pic3") ) // 0 = left of canvas
-            .settings.add( 700, 400, getImage("pic4") )  // 300 = 100px to the right of the right edge of competitor
+            .settings.add(  0, 0, getImage("pic1") )
+            .settings.add( 700, 0, getImage("pic2") )
+            .settings.add(   0, 400, getImage("pic3") )
+            .settings.add( 700, 400, getImage("pic4") )
             .print()
         ,
         newTimer("reminder1", 2000)
@@ -71,8 +69,8 @@ PennController("picture1",
            .shuffle()
            //.settings.log()
            .wait()
-           ,
-       newTimer("pause", 2000)
+        ,
+        newTimer("pause", 2000)
                .start()
                .wait()
       );
@@ -86,6 +84,15 @@ PennController("picture2",
             .settings.center()
             .print()
       ,
+      newText("null"," ")
+      ,
+      newTimer("removeText1",1000)
+            .start()
+            .wait()
+      ,
+      getText("example1")
+            .settings.text("... Jetzt ein Bild auswählen..")
+      ,
       newImage("pic5","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
       ,
       newImage("pic6", "http://vfoss.org:9090/ibex/38_2_JPG.JPG")
@@ -95,11 +102,16 @@ PennController("picture2",
       newImage("pic8", "http://vfoss.org:9090/ibex/38_4_JPG.JPG")
       ,
       newCanvas("tanks", 700, 400)
-            .settings.add(  0, 0, getImage("pic5") ) // 0 = left of canvas
-            .settings.add( 700, 0, getImage("pic6") )  // 300 = 100px to the right of the right edge of competitor
-            .settings.add(   0, 400, getImage("pic7") ) // 0 = left of canvas
-            .settings.add( 700, 400, getImage("pic8") )  // 300 = 100px to the right of the right edge of competitor
+            .settings.add(  0, 0, getImage("pic5") )
+            .settings.add( 700, 0, getImage("pic6") )
+            .settings.add(   0, 400, getImage("pic7") )
+            .settings.add( 700, 400, getImage("pic8") )
             .print()
+      ,
+      newTimer("reminder1", 2000)
+          //.settings.callback( getSelector("tank").select(getText("null")) )
+          .settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
+          .start()
       ,
      newSelector("tank")
            .settings.add( getImage("pic5") , getImage("pic6"), getImage("pic7"), getImage("pic8") )
@@ -108,23 +120,21 @@ PennController("picture2",
 
 PennController("instructions2" ,
     defaultText
-      .settings.css("font-size", "15pt")
-      .settings.center()
-      .print()
+          .settings.css("font-size", "25pt")
+          .settings.center()
+          .print()
     ,
         newText("intro1", "Das war die Übung!")
     ,
         newText("intro2", "Jetzt werden wir mit dem Experiment starten.")
-        //.print()
     ,
         newText("intro3", "Wenn du noch Fragen hast, wende dich bitte jetzt an die Experimentleiterin.")
-        //.print()
     ,
         newText("intro4", "Ansonsten kannst du auf ‚weiter’ klicken.")
     ,
-        newButton("button", "weiter") // Handle exception: an all-digit string would be evaluated as a charCode
+        newButton("button", "weiter")
           .print()
-          .wait()                 // Start when 1, 2, 3 or 4 is pressed (weird character not on keyboard)
+          .wait()
 )
 .setOption("hideProgressBar", true);
 
@@ -140,27 +150,6 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
             //.settings.css("margin", "30px")
             .settings.css("padding-left", "380pt")
             .print()
-
-        // newImage("img1", row.picture1)
-        //     .settings.size(300,300)
-        //     .print()
-        // ,
-        // newImage("img2", row.picture2)
-        //     .settings.size(300,300)
-        //     .print()
-        // ,
-        // newImage("img3", row.picture3)
-        //     .settings.size(300,300)
-        //     .print()
-        // ,
-        // newImage("img4", row.picture4)
-        //     .settings.size(300,300)
-        //     .print()
-        // ,
-        // newSelector("tank")
-        // .settings.add( getImage("img1"), getImage("img2"), getImage("img3"), getImage("img4") )
-        // .wait()
-        //,
         ,
         newText("null"," ")
         ,
@@ -173,10 +162,10 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           //.remove()
         ,
         newCanvas("tanks", 700, 400)
-          .settings.add(  0, 0, newImage("pic1", row.picture1) ) // 0 = left of canvas
-          .settings.add( 700, 0, newImage("pic2", row.picture2) )  // 300 = 100px to the right of the right edge of competitor
-          .settings.add(   0, 400, newImage("pic3", row.picture3) ) // 0 = left of canvas
-          .settings.add( 700, 400, newImage("pic4", row.picture4) )  // 300 = 100px to the right of the right edge of competitor
+          .settings.add(  0, 0, newImage("pic1", row.picture1) )
+          .settings.add( 700, 0, newImage("pic2", row.picture2) )
+          .settings.add(   0, 400, newImage("pic3", row.picture3) )
+          .settings.add( 700, 400, newImage("pic4", row.picture4) )  
           .print()
         ,
         newTimer("reminder", 2000)
