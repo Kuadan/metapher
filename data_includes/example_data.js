@@ -16,7 +16,7 @@ PennController("instructions1" ,
         ,
         newText("intro4", "Du sollst versuchen, so schnell wie möglich zu antworten! Versuch dich also, auf deine Intuition zu verlassen.")
         ,
-        newText("intro5", "Du wirst zwei Übungen dafür bekommen, bevor es mit dem eigentlichen Experiment losgeht.")
+        newText("intro5", "Du wirst drei Übungen dafür bekommen, bevor es mit dem eigentlichen Experiment losgeht.")
         ,
         newText("intro6", "Klicke auf ‚weiter’ um mit den Übungen anzufangen.")
         ,
@@ -37,7 +37,7 @@ PennController("picture1",
           ,
           newText("null"," ")
           ,
-          newTimer("removeText1",1500)
+          newTimer("removeText1",2000)
               .start()
               .wait()
           ,
@@ -59,7 +59,7 @@ PennController("picture1",
               .settings.add( 700, 400, getImage("pic4") )
               .print()
           ,
-          newTimer("reminder1", 3000)
+          newTimer("reminder1", 4000)
               .settings.callback( getSelector("tank").select(getText("null")) )
               //.settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
               .start()
@@ -71,10 +71,10 @@ PennController("picture1",
               .shuffle()
            //.settings.log()
               .wait()
-          ,
-          newTimer("pause", 2000)
-               .start()
-               .wait()
+          //,
+          //newTimer("pause", 2000)
+               //.start()
+               //.wait()
       );
 
 PennController("picture2",
@@ -88,7 +88,7 @@ PennController("picture2",
           ,
           newText("null"," ")
           ,
-          newTimer("removeText2",1500)
+          newTimer("removeText2",2000)
               .start()
               .wait()
           ,
@@ -110,7 +110,7 @@ PennController("picture2",
               .settings.add( 700, 400, getImage("pic8") )
               .print()
           ,
-          newTimer("reminder2", 3000)
+          newTimer("reminder2", 4000)
               .settings.callback( getSelector("tank").select(getText("null")) )
               .settings.callback( getText("example2").settings.text("... zu langsam, next ")  )
               .start()
@@ -133,7 +133,7 @@ PennController("picture2",
                  ,
                  newText("null"," ")
                  ,
-                 newTimer("removeText3",1500)
+                 newTimer("removeText3",2000)
                      .start()
                      .wait()
                  ,
@@ -155,7 +155,7 @@ PennController("picture2",
                      .settings.add( 700, 400, getImage("pic12") )
                      .print()
                  ,
-                 newTimer("reminder3", 3000)
+                 newTimer("reminder3", 4000)
                      .settings.callback( getSelector("tank").select(getText("null")) )
                      //.settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
                      .start()
@@ -167,10 +167,10 @@ PennController("picture2",
                      .shuffle()
                   //.settings.log()
                      .wait()
-                 ,
-                 newTimer("pause", 2000)
-                      .start()
-                      .wait()
+                 //,
+                 //newTimer("pause", 2000)
+                      //.start()
+                      //.wait()
              );
 
 PennController("instructions2" ,
@@ -206,7 +206,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
         ,
         newText("null"," ")
         ,
-        newTimer("removeText2",1000)
+        newTimer("removeText",1000)
           .start()
           .wait()
         ,
@@ -220,16 +220,15 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .settings.add( 700, 400, newImage("pic4", row.picture4) )
           .print()
         ,
-        newTimer("reminder2", 3000)
+        newTimer("reminder", 3000)
           //.settings.callback( getText("test sentence").settings.text("Zu langsam!") )
           .settings.callback( getSelector("tank").select(getText("null")) )
-          .settings.callback( getText("test sentence").settings.text("... zu langsam, next ")  )
           .start()
         ,
         newSelector("tank")
           //.settings.log()
           .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
-          .settings.callback( getTimer("reminder2").stop() )
+          .settings.callback( getTimer("reminder").stop() )
           .shuffle()
           .settings.log()
           .wait()
