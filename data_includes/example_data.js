@@ -1,6 +1,6 @@
 PennController.ResetPrefix(null);
 PennController.AddHost("http://vfoss.org:9090/ibex/");
-PennController.Sequence( "instructions1", "picture1", "picture2", "instructions2", randomize("picture") );
+PennController.Sequence( "instructions1", "picture1", "picture2", "picture3", "instructions2", randomize("picture") );
 
 PennController("instructions1" ,
     defaultText
@@ -95,13 +95,13 @@ PennController("picture2",
       getText("example2")
             .settings.text("... Jetzt ein Bild auswählen..")
       ,
-      newImage("pic5","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
+      newImage("pic5","http://vfoss.org:9090/ibex/41_1_related_JPG.JPG")
       ,
-      newImage("pic6", "http://vfoss.org:9090/ibex/38_2_JPG.JPG")
+      newImage("pic6", "http://vfoss.org:9090/ibex/41_2_related_JPG.JPG")
       ,
-      newImage("pic7","http://vfoss.org:9090/ibex/38_3_JPG.JPG")
+      newImage("pic7","http://vfoss.org:9090/ibex/41_3_JPG.JPG")
       ,
-      newImage("pic8", "http://vfoss.org:9090/ibex/38_4_JPG.JPG")
+      newImage("pic8", "http://vfoss.org:9090/ibex/41_4_JPG.JPG")
       ,
       newCanvas("tanks", 700, 400)
             .settings.add(  0, 0, getImage("pic5") )
@@ -121,6 +121,57 @@ PennController("picture2",
            .shuffle()
            .wait()
        );
+
+ PennController("picture3",
+             defaultImage
+                     .settings.size(640, 360)
+                 ,
+                 newText("example3", "Die Bäckerin bäckt Kuchen mit ...")
+                     .settings.css("font-size", "40pt")
+                     .settings.center()
+                     .print()
+                 ,
+                 newText("null"," ")
+                 ,
+                 newTimer("removeText3",1500)
+                     .start()
+                     .wait()
+                 ,
+                 getText("example3")
+                     .settings.text("... Jetzt ein Bild auswählen..")
+                 ,
+                 newImage("pic9","http://vfoss.org:9090/ibex/37_1_related_JPG.JPG")
+                 ,
+                 newImage("pic10", "http://vfoss.org:9090/ibex/37_2_JPG.JPG")
+                 ,
+                 newImage("pic11","http://vfoss.org:9090/ibex/37_3_JPG.JPG")
+                 ,
+                 newImage("pic12", "http://vfoss.org:9090/ibex/37_4_JPG.JPG")
+                 ,
+                 newCanvas("tanks", 700, 400)
+                     .settings.add(  0, 0, getImage("pic9") )
+                     .settings.add( 700, 0, getImage("pic10") )
+                     .settings.add(   0, 400, getImage("pic11") )
+                     .settings.add( 700, 400, getImage("pic12") )
+                     .print()
+                 ,
+                 newTimer("reminder3", 3000)
+                     .settings.callback( getSelector("tank").select(getText("null")) )
+                     //.settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
+                     .start()
+                 ,
+                 newSelector("tank")
+                     .settings.add( getImage("pic9") , getImage("pic10"), getImage("pic11"), getImage("pic12") )
+                     .settings.callback(  getTimer("reminder3").stop() )
+                     //.settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
+                     .shuffle()
+                  //.settings.log()
+                     .wait()
+                 ,
+                 newTimer("pause", 2000)
+                      .start()
+                      .wait()
+             );
 
 PennController("instructions2" ,
     defaultText
