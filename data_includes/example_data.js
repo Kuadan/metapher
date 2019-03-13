@@ -146,9 +146,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
             .settings.size(640, 360)
         ,
         newText("test sentence", row.sentence)
-            //.settings.css("position", "absolute")
             .settings.css("font-size", "40pt")
-            //.settings.css("margin", "30px")
             .settings.css("padding-left", "380pt")
             .print()
         ,
@@ -160,7 +158,6 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
         ,
         getText("test sentence")
           .settings.text(" ")
-          //.remove()
         ,
         newCanvas("tanks", 700, 400)
           .settings.add(  0, 0, newImage("pic1", row.picture1) )
