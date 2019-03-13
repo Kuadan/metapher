@@ -221,7 +221,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .print()
         ,
         newTimer("reminder", 3000)
-          //.settings.callback( getText("test sentence").settings.text("Zu langsam!") )
+          .settings.callback( getText("test sentence").settings.text("Zu langsam!") )
           .settings.callback( getSelector("tank").select(getText("null")) )
           .start()
         ,
