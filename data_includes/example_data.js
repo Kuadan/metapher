@@ -32,7 +32,7 @@ PennController("picture1",
           ,
           newText("example1", "Das Mädchen liebt Süßgikeit und isst gern...")
               .settings.css("font-size", "40pt")
-              .settings.center()
+              .settings.css("padding-left", "380pt")
               .print()
           ,
           newText("null"," ")
@@ -79,47 +79,47 @@ PennController("picture1",
 
 PennController("picture2",
      defaultImage
-            .settings.size(640, 360)
-      ,
-      newText("example2", "Die Apothekerin arbeitet viel und braucht ...")
-            .settings.css("font-size", "40pt")
-            .settings.center()
-            .print()
-      ,
-      newText("null"," ")
-      ,
-      newTimer("removeText2",1500)
-            .start()
-            .wait()
-      ,
-      getText("example2")
-            .settings.text("... Jetzt ein Bild auswählen..")
-      ,
-      newImage("pic5","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
-      ,
-      newImage("pic6", "http://vfoss.org:9090/ibex/38_2_JPG.JPG")
-      ,
-      newImage("pic7","http://vfoss.org:9090/ibex/38_3_JPG.JPG")
-      ,
-      newImage("pic8", "http://vfoss.org:9090/ibex/38_4_JPG.JPG")
-      ,
-      newCanvas("tanks", 700, 400)
-            .settings.add(  0, 0, getImage("pic5") )
-            .settings.add( 700, 0, getImage("pic6") )
-            .settings.add(   0, 400, getImage("pic7") )
-            .settings.add( 700, 400, getImage("pic8") )
-            .print()
-      ,
-      newTimer("reminder2", 3000)
-          .settings.callback( getSelector("tank").select(getText("null")) )
-          .settings.callback( getText("example2").settings.text("... zu langsam, next ")  )
-          .start()
-      ,
-     newSelector("tank")
-           .settings.add( getImage("pic5") , getImage("pic6"), getImage("pic7"), getImage("pic8") )
-           .settings.callback( getTimer("reminder2").stop() )
-           .shuffle()
-           .wait()
+              .settings.size(640, 360)
+          ,
+          newText("example2", "Die Apothekerin arbeitet viel und braucht ...")
+              .settings.css("font-size", "40pt")
+              .settings.css("padding-left", "380pt")
+              .print()
+          ,
+          newText("null"," ")
+          ,
+          newTimer("removeText2",1500)
+              .start()
+              .wait()
+          ,
+          getText("example2")
+              .settings.text("... Jetzt ein Bild auswählen..")
+          ,
+          newImage("pic5","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
+          ,
+          newImage("pic6", "http://vfoss.org:9090/ibex/38_2_JPG.JPG")
+          ,
+          newImage("pic7","http://vfoss.org:9090/ibex/38_3_JPG.JPG")
+          ,
+          newImage("pic8", "http://vfoss.org:9090/ibex/38_4_JPG.JPG")
+          ,
+          newCanvas("tanks", 700, 400)
+              .settings.add(  0, 0, getImage("pic5") )
+              .settings.add( 700, 0, getImage("pic6") )
+              .settings.add(   0, 400, getImage("pic7") )
+              .settings.add( 700, 400, getImage("pic8") )
+              .print()
+          ,
+          newTimer("reminder2", 3000)
+              .settings.callback( getSelector("tank").select(getText("null")) )
+              .settings.callback( getText("example2").settings.text("... zu langsam, next ")  )
+              .start()
+          ,
+          newSelector("tank")
+              .settings.add( getImage("pic5") , getImage("pic6"), getImage("pic7"), getImage("pic8") )
+              .settings.callback( getTimer("reminder2").stop() )
+              .shuffle()
+              .wait()
        );
 
  PennController("picture3",
@@ -128,7 +128,7 @@ PennController("picture2",
                  ,
                  newText("example3", "Die Bäckerin bäckt Kuchen mit ...")
                      .settings.css("font-size", "40pt")
-                     .settings.center()
+                     .settings.css("padding-left", "380pt")
                      .print()
                  ,
                  newText("null"," ")
