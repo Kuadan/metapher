@@ -64,7 +64,7 @@ PennController.Template( PennController.GetTable("beispiel.csv"),
           .shuffle()
           .settings.log()
           .wait()
-        )
+
 );
 //PennController("picture1",
       //defaultImage
