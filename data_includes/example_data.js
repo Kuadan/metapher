@@ -94,7 +94,7 @@ PennController("picture2",
       getText("example2")
             .settings.text("... Jetzt ein Bild auswählen..")
       ,
-    newImage("pic5","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
+      newImage("pic5","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
       ,
       newImage("pic6", "http://vfoss.org:9090/ibex/38_2_JPG.JPG")
       ,
@@ -150,7 +150,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
             .settings.css("padding-left", "380pt")
             .print()
         ,
-        newText("null2"," ")
+        newText("null"," ")
         ,
         newTimer("removeText2",1000)
           .start()
