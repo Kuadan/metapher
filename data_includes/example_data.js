@@ -30,7 +30,7 @@ PennController("picture1",
       defaultImage
               .settings.size(640, 360)
           ,
-          newText("example1", "Das Mädchen meint liebt Süßgikeit und isst gern...")
+          newText("example1", "Das Mädchen liebt Süßgikeit und isst gern...")
               .settings.css("font-size", "40pt")
               .settings.center()
               .print()
@@ -61,13 +61,13 @@ PennController("picture1",
           ,
           newTimer("reminder1", 3000)
               .settings.callback( getSelector("tank").select(getText("null")) )
-              //.settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
+              .settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
               .start()
           ,
           newSelector("tank")
               .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
               .settings.callback(  getTimer("reminder1").stop() )
-              .settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
+              //.settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
               .shuffle()
            //.settings.log()
               .wait()
