@@ -60,7 +60,7 @@ PennController("picture1",
             .print()
         ,
         newTimer("reminder1", 3000)
-            .settings.callback( getSelector("tank").select(getText("null")) )
+            //.settings.callback( getSelector("tank").select(getText("null")) )
             .settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
             .start()
         ,
