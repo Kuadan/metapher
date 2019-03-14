@@ -26,48 +26,6 @@ PennController("instructions1" ,
 )
 .setOption("hideProgressBar", true);
 
-PennController.Template( PennController.GetTable("beispiel.csv"),
-    row => PennController( "picture" ,
-        defaultImage
-            .settings.size(640, 360)
-        ,
-        newText("test sentence", row.sentence)
-            .settings.css("font-size", "40pt")
-            .settings.css("padding-left", "380pt")
-            .print()
-        ,
-        newText("null"," ")
-        ,
-        newTimer("removeText",1000)
-          .start()
-          .wait()
-        ,
-        getText("test sentence")
-          .settings.text(" ")
-        ,
-        newCanvas("tanks", 700, 400)
-          .settings.add(  0, 0, newImage("pic1", row.picture1) )
-          .settings.add( 700, 0, newImage("pic2", row.picture2) )
-          .settings.add(   0, 400, newImage("pic3", row.picture3) )
-          .settings.add( 700, 400, newImage("pic4", row.picture4) )
-          .print()
-        ,
-        newTimer("reminder", 3000)
-          .settings.callback( getText("test sentence").settings.text("Zu langsam!") )
-          .settings.callback( getSelector("tank").select(getText("null")) )
-          .start()
-        ,
-        newSelector("tank")
-          //.settings.log()
-          .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
-          .settings.callback( getTimer("reminder").stop() )
-          .shuffle()
-          .settings.log()
-          .wait()
-        )
-);
-
-
 PennController("picture1",
       defaultImage
               .settings.size(640, 360)
@@ -163,6 +121,10 @@ PennController("picture2",
               .settings.callback( getTimer("reminder2").stop() )
               .shuffle()
               .wait()
+          ,
+          newTimer("pause", 2000)
+              .start()
+              .wait()
        );
 
  PennController("picture3",
@@ -210,10 +172,10 @@ PennController("picture2",
                      .shuffle()
                   //.settings.log()
                      .wait()
-                 //,
-                 //newTimer("pause", 2000)
-                      //.start()
-                      //.wait()
+                 ,
+                 newTimer("pause", 2000)
+                      .start()
+                      .wait()
              );
 
 PennController("instructions2" ,
@@ -264,8 +226,9 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .print()
         ,
         newTimer("reminder", 3000)
-          .settings.callback( getText("test sentence").settings.text("Zu langsam!") )
+          //.settings.callback( getText("test sentence").settings.text("Zu langsam!") )
           .settings.callback( getSelector("tank").select(getText("null")) )
+          .settings.callback( getText("test sentence").settings.text("Zu langsam!") )
           .start()
         ,
         newSelector("tank")
@@ -274,6 +237,10 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .settings.callback( getTimer("reminder").stop() )
           .shuffle()
           .settings.log()
+          .wait()
+       ,
+       newTimer("pause", 2000)
+          .start()
           .wait()
         )
 );
