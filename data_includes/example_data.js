@@ -73,7 +73,7 @@ PennController("picture1",
            //.settings.log()
               .wait()
           ,
-          newTimer("pause", 2000)
+          newTimer("pause1", 2000)
                .start()
                .wait()
       );
@@ -123,7 +123,7 @@ PennController("picture2",
               .shuffle()
               .wait()
           ,
-          newTimer("pause", 2000)
+          newTimer("pause2", 2000)
               .start()
               .wait()
        );
@@ -174,7 +174,7 @@ PennController("picture2",
                   //.settings.log()
                      .wait()
                  ,
-                 newTimer("pause", 2000)
+                 newTimer("pause3", 3000)
                       .start()
                       .wait()
              );
