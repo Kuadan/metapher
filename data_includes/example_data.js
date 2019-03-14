@@ -119,7 +119,7 @@ PennController("picture2",
           newSelector("tank")
               .settings.add( getImage("pic5") , getImage("pic6"), getImage("pic7"), getImage("pic8") )
               .settings.callback( getTimer("reminder2").stop() )
-              ̃.settings.callback( getText("example2").settings.text("Schnell genug!")  )
+              .settings.callback( getText("example2").settings.text("Schnell genug!")  )
               .shuffle()
               .wait()
         ,
@@ -174,7 +174,7 @@ PennController("picture2",
                   //.settings.log()
                      .wait()
                  ,
-                 newTimer("pause3", 3000)
+                 newTimer("pause3", 2000)
                       .start()
                       .wait()
              );
