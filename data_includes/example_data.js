@@ -27,7 +27,7 @@ PennController("instructions1" ,
 .setOption("hideProgressBar", true);
 
 PennController("picture1",
-      defaultImage
+        defaultImage
               .settings.size(640, 360)
           ,
           newText("example1", "Das Mädchen liebt Süßgikeit und isst gern...")
@@ -169,7 +169,7 @@ PennController("picture2",
                  newSelector("tank")
                      .settings.add( getImage("pic9") , getImage("pic10"), getImage("pic11"), getImage("pic12") )
                      .settings.callback(  getTimer("reminder3").stop() )
-                     .settings.callback( getText("example1").settings.text("Gut gemacht!")  )
+                     .settings.callback( getText("example3").settings.text("Gut gemacht!")  )
                      .shuffle()
                   //.settings.log()
                      .wait()
@@ -236,7 +236,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           //.settings.log()
           .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
           .settings.callback( getTimer("reminder").stop() )
-          .settings.callback( getText("test sentence").settings.text("Gut gemacht!")  )
+          //.settings.callback( getText("test sentence").settings.text("Gut gemacht!")  )
           .shuffle()
           .settings.log()
           .wait()
