@@ -68,7 +68,7 @@ PennController("picture1",
           newSelector("tank")
               .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
               .settings.callback(  getTimer("reminder1").stop() )
-              .settings.callback( getText("example1").settings.text("Gut gemacht!")  )
+              //.settings.callback( getText("example1").settings.text("Gut gemacht!")  )
               .shuffle()
            //.settings.log()
               .wait()
@@ -119,7 +119,7 @@ PennController("picture2",
           newSelector("tank")
               .settings.add( getImage("pic5") , getImage("pic6"), getImage("pic7"), getImage("pic8") )
               .settings.callback( getTimer("reminder2").stop() )
-              .settings.callback( getText("example2").settings.text("Gut gemacht!")  )
+              //.settings.callback( getText("example2").settings.text("Gut gemacht!")  )
               .shuffle()
               .wait()
           ,
@@ -163,13 +163,13 @@ PennController("picture2",
                  ,
                  newTimer("reminder3", 4000)
                      .settings.callback( getSelector("tank").select(getText("null")) )
-                     .settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
+                     .settings.callback( getText("example3").settings.text("... zu langsam, next ")  )
                      .start()
                  ,
                  newSelector("tank")
                      .settings.add( getImage("pic9") , getImage("pic10"), getImage("pic11"), getImage("pic12") )
                      .settings.callback(  getTimer("reminder3").stop() )
-                     .settings.callback( getText("example3").settings.text("Gut gemacht!")  )
+                     //.settings.callback( getText("example3").settings.text("Gut gemacht!")  )
                      .shuffle()
                   //.settings.log()
                      .wait()
