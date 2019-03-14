@@ -236,7 +236,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           //.settings.log()
           .settings.add( getImage("pic1") , getImage("pic2"), getImage("pic3"), getImage("pic4") )
           .settings.callback( getTimer("reminder").stop() )
-          //.settings.callback( getText("test sentence").settings.text("Gut gemacht!")  )
+          .settings.callback( getText("test sentence").settings.text("Schnell genug!")  )
           .shuffle()
           .settings.log()
           .wait()
