@@ -220,10 +220,10 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .settings.text(" ")
         ,
         newCanvas("tanks", 700, 400)
-          .settings.add(  0, 0, newImage("pic1", row.picture1) )
-          .settings.add( 700, 0, newImage("pic2", row.picture2) )
-          .settings.add(   0, 400, newImage("pic3", row.picture3) )
-          .settings.add( 700, 400, newImage("pic4", row.picture4) )
+          .settings.add(  0, 0, newImage("pic1", row.metaphoric) )
+          .settings.add( 700, 0, newImage("pic2", row.literal) )
+          .settings.add(   0, 400, newImage("pic3", row.distr1) )
+          .settings.add( 700, 400, newImage("pic4", row.distr2) )
           .print()
         ,
         newTimer("reminder", 3000)
