@@ -73,7 +73,7 @@ PennController("picture1",
            //.settings.log()
               .wait()
           ,
-          newTimer("pause1",12000)
+          newTimer("pause1",1000)
                .start()
                .wait()
       );
