@@ -12,7 +12,7 @@ PennController("instructions1" ,
         ,
         newText("intro2", "In diesem Experiment wirst du Teile von Sätzen lesen, die zusammen mit vier Bildern erscheinen werden.")
         ,
-        newText("intro3", "Du musst entscheiden, welches von den vier Bildern den Satz am besten vervollständigen könnte.")
+        newText("intro3", "Du musst dich entscheiden, welches von den vier Bildern den Satz am besten vervollständigen könnte.")
         ,
         newText("intro4", "Du sollst versuchen, so schnell wie möglich zu antworten! Versuch dich also, auf deine Intuition zu verlassen.Wenn du nicht schnell genug bist, wird ein Hinweis auf dem Bildschirm gezeigt.")
         ,
@@ -60,7 +60,7 @@ PennController("picture1",
               .print()
           ,
           // nichts gewählt
-          newTimer("reminder1", 4000)
+          newTimer("reminder1", 3000)
               .settings.callback( getSelector("tank").select(getText("null")) )
               .settings.callback( getText("example1").settings.text("... zu langsam, next ")  )
               .start()
@@ -73,7 +73,7 @@ PennController("picture1",
            //.settings.log()
               .wait()
           ,
-          newTimer("pause1", 2000)
+          newTimer("pause1",12000)
                .start()
                .wait()
       );
@@ -111,7 +111,7 @@ PennController("picture2",
               .settings.add( 700, 400, getImage("pic8") )
               .print()
           ,
-          newTimer("reminder2", 4000)
+          newTimer("reminder2", 3000)
               .settings.callback( getSelector("tank").select(getText("null")) )
               .settings.callback( getText("example2").settings.text("... zu langsam, next ")  )
               .start()
@@ -123,7 +123,7 @@ PennController("picture2",
               .shuffle()
               .wait()
         ,
-          newTimer("pause2", 2000)
+          newTimer("pause2", 1000)
               .start()
               .wait()
        );
@@ -161,7 +161,7 @@ PennController("picture2",
                      .settings.add( 700, 400, getImage("pic12") )
                      .print()
                  ,
-                 newTimer("reminder3", 4000)
+                 newTimer("reminder3", 3000)
                      .settings.callback( getSelector("tank").select(getText("null")) )
                      .settings.callback( getText("example3").settings.text("... zu langsam, next ")  )
                      .start()
@@ -174,7 +174,7 @@ PennController("picture2",
                   //.settings.log()
                      .wait()
                  ,
-                 newTimer("pause3", 2000)
+                 newTimer("pause3", 1000)
                       .start()
                       .wait()
              );
@@ -241,7 +241,7 @@ PennController.Template( PennController.GetTable("itemlist.csv"),
           .settings.log()
           .wait()
        ,
-       newTimer("pause", 2000)
+       newTimer("pause", 1000)
           .start()
           .wait()
         )
