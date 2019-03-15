@@ -12,9 +12,9 @@ PennController("instructions1" ,
         ,
         newText("intro2", "In diesem Experiment wirst du Teile von Sätzen lesen, die zusammen mit vier Bildern erscheinen werden.")
         ,
-        newText("intro3", "Du musst entschieden, welches von den vier Bildern den Satz am besten vervollständigen könnten.")
+        newText("intro3", "Du musst entscheiden, welches von den vier Bildern den Satz am besten vervollständigen könnte.")
         ,
-        newText("intro4", "Du sollst versuchen, so schnell wie möglich zu antworten! Versuch dich also, auf deine Intuition zu verlassen.")
+        newText("intro4", "Du sollst versuchen, so schnell wie möglich zu antworten! Versuch dich also, auf deine Intuition zu verlassen.Wenn du nicht schnell genug bist, wird ein Hinweis auf dem Bildschirm gezeigt.")
         ,
         newText("intro5", "Du wirst drei Übungen dafür bekommen, bevor es mit dem eigentlichen Experiment losgeht.")
         ,
@@ -96,7 +96,7 @@ PennController("picture2",
           getText("example2")
               .settings.text("... Jetzt ein Bild auswählen..")
           ,
-          newImage("pic5","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
+          newImage("pic5","http://vfoss.org:9090/ibex/39_1_JPG.JPG")
           ,
           newImage("pic6", "http://vfoss.org:9090/ibex/38_2_JPG.JPG")
           ,
@@ -146,7 +146,7 @@ PennController("picture2",
                  getText("example3")
                      .settings.text("... Jetzt ein Bild auswählen..")
                  ,
-                 newImage("pic9","http://vfoss.org:9090/ibex/48_1_related_JPG.JPG")
+                 newImage("pic9","http://vfoss.org:9090/ibex/38_1_JPG.JPG")
                  ,
                  newImage("pic10", "http://vfoss.org:9090/ibex/48_2_related_JPG.JPG")
                  ,
