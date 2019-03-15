@@ -148,7 +148,7 @@ PennController("picture2",
                  ,
                  newImage("pic9","http://vfoss.org:9090/ibex/38_2_JPG.JPG")
                  ,
-                 newImage("pic10", "http://vfoss.org:9090/ibex/48_2_related_JPG.JPG")
+                 newImage("pic10", "http://vfoss.org:9090/ibex/48_1_related_JPG.JPG")
                  ,
                  newImage("pic11","http://vfoss.org:9090/ibex/48_3_JPG.JPG")
                  ,
