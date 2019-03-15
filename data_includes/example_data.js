@@ -132,7 +132,7 @@ PennController("picture2",
              defaultImage
                      .settings.size(640, 360)
                  ,
-                 newText("example3", "Die Bäckerin bäckt Kuchen mit ...")
+                 newText("example3", "Die Bäckerin backt Kuchen mit ...")
                      .settings.css("font-size", "40pt")
                      .settings.css("padding-left", "200pt")
                      .print()
