@@ -1,5 +1,5 @@
 PennController.ResetPrefix(null);
-PennController.AddHost("http://spellout.net/ibexfarm/ajax/download/metapher/data_includes/");
+PennController.AddHost("http://vfoss.org:9090/ibex/");
 PennController.Sequence( "instructions1", "picture1", "picture2", "picture3", "instructions2", randomize("picture") );
 
 PennController("instructions1" ,
