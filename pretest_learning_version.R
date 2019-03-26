@@ -9,7 +9,6 @@
 
 
 install.packages("ibex.tar.gz", repos=NULL)
-R CMD INSTALL -l /Praktikum/ibex_project/metapher ibex.tar.gz
 
 
 #####learn what the functions within the package do
@@ -28,7 +27,7 @@ library(tidyr)
 library(dplyr)
 ###set working directory ????
 
-setwd("D:\Praktikum\ibex_project\metapher”)
+setwd("/Praktikum/ibex_project/metapher”)
 
 
 ###remove scientific notation ????
