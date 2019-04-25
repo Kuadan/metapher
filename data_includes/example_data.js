@@ -4,7 +4,7 @@ PennController.Sequence( "instructions1", "picture1", "picture2", "picture3", "i
 PennController("instructions1" ,
     defaultText
           .settings.css("font-size", "20pt")
-          .settings.left()
+          .settings.center()
           .print()
         ,
         newText("intro1", "Hallo und willkommen zu unserer Studie!")
@@ -20,6 +20,7 @@ PennController("instructions1" ,
         newText("intro6", "Klicke auf ‚weiter’ um mit den Übungen anzufangen.")
         ,
         newButton("button", "weiter")
+            .settings.center()
             .print()
             .wait()
 )
@@ -31,7 +32,8 @@ PennController("picture1",
           ,
           newText("example1", "Das Mädchen isst gerne...")
               .settings.css("font-size", "40pt")
-              .settings.css("padding-left", "1pt")
+              //.settings.css("padding-left", "1pt")
+              .settings.center()
               .print()
           ,
           newText("null"," ")
@@ -87,6 +89,7 @@ PennController("picture1",
           .wait()
       ,
       newButton("button", "weiter")
+          .settings.center()
           .print()
           .wait()
       ,
@@ -145,7 +148,7 @@ PennController("picture2",
           ,
           newText("pleasewait", "Gehe zum nächsten Satz")
           .settings.css("font-size", "20pt")
-          .settings.css("padding-left", "1pt")
+          //.settings.css("padding-left", "1pt")
           //.settings.css("margin-top", "250pt")
           .settings.center()
           .print()
@@ -155,6 +158,7 @@ PennController("picture2",
           .wait()
         ,
         newButton("button", "weiter")
+          .settings.center()
           .print()
           .wait()
         ,
@@ -214,7 +218,7 @@ PennController("picture2",
                ,
                newText("pleasewait", "Gehe zum nächsten Satz")
                .settings.css("font-size", "20pt")
-               .settings.css("margin-top", "220pt")
+               //.settings.css("margin-top", "220pt")
                //.settings.css("padding-left", "1pt")
                .settings.center()
                .print()
@@ -224,6 +228,7 @@ PennController("picture2",
                  .wait()
            ,
                newButton("button", "weiter")
+                 .settings.center()
                  .print()
                  .wait()
            ,
@@ -235,8 +240,9 @@ PennController("picture2",
              PennController("instructions2" ,
                  defaultText
                        .settings.css("font-size", "20pt")
-                       .settings.left()
-                       .settings.css("margin-top", "50pt")
+                       //.settings.left()
+                       //.settings.css("margin-top", "50pt")
+                       .settings.center()
                        .print()
                  ,
                      newText("intro1", "Das war die Übung!")
@@ -248,6 +254,7 @@ PennController("picture2",
                      newText("intro4", "Ansonsten kannst du auf ‚weiter’ klicken.")
                  ,
                      newButton("button", "weiter")
+                       .settings.center()
                        .print()
                        .wait()
              )
@@ -261,7 +268,8 @@ PennController("picture2",
                      ,
                      newText("test sentence", row.sentence)
                          .settings.css("font-size", "40pt")
-                         .settings.css("padding-left", "1pt")
+                         //.settings.css("padding-left", "1pt")
+                         .settings.center()
                          .print()
                      ,
                      newText("null"," ")
@@ -302,7 +310,7 @@ PennController("picture2",
                     ,
                     newText("pleasewait", "Gehe zum nächsten Satz")
                        .settings.css("font-size", "20pt")
-                       .settings.css("padding-left", "1pt")
+                       //.settings.css("padding-left", "1pt")
                        //.settings.css("margin-top", "250pt")
                        .settings.center()
                        .print()
@@ -312,6 +320,7 @@ PennController("picture2",
                        .wait()
                    ,
                    newButton("button", "weiter")
+                    .settings.center()
                     .print()
                     .wait()
               ,
