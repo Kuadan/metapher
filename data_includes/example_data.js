@@ -54,10 +54,10 @@ PennController("picture1",
           newImage("pic4", "http://vfoss.org:9090/ibex/41_4.jpg")
           ,
           newCanvas("tanks", 700, 500)
-              .settings.add(  2, 0, getImage("pic1"),0 )
-              .settings.add( 362, 1, getImage("pic2"),1 )
-              .settings.add(  1, 258, getImage("pic3"),2 )
-              .settings.add( 376, 261, getImage("pic4"),3 )
+              .settings.add(  1, -86, getImage("pic1"),0 )
+              .settings.add( 370, -92, getImage("pic2"),1 )
+              .settings.add(  0, 178, getImage("pic3"),2 )
+              .settings.add( 376, 176, getImage("pic4"),3 )
               .print()
           ,
           // nichts gewählt
