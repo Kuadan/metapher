@@ -100,7 +100,7 @@ PennController("picture1",
 
 PennController("picture2",
            defaultImage
-                    .settings.size(350, 250)
+                    .settings.size(390, 270)
                 ,
                 newText("example2", "Der Apotheker macht Sport im ...")
                     .settings.css("font-size", "40pt")
@@ -125,11 +125,11 @@ PennController("picture2",
           newImage("pic8", "http://vfoss.org:9090/ibex/example7.jpg")
           ,
           newCanvas("tanks", 700, 500)
-          .settings.add(  2, 0, getImage("pic5"),0 )
-          .settings.add( 362, 1, getImage("pic6"),1 )
-          .settings.add(  1, 258, getImage("pic7"),2 )
-          .settings.add( 376, 261, getImage("pic8"),3 )
-              .print()
+                .settings.add(  -35, -90, getImage("pic5"),0 )
+                .settings.add( 370, -90, getImage("pic6"),1 )
+                .settings.add(  -35, 190, getImage("pic7"),2 )
+                .settings.add( 370, 190, getImage("pic8"),3 )
+                .print()
           ,
           newTimer("reminder2", 3000)
               .settings.callback( getSelector("tank").select(getText("null")) )
@@ -142,21 +142,21 @@ PennController("picture2",
               .settings.callback( getText("example2").settings.text(" ")  )
               .shuffle()
               .wait()
-        ,
-        getCanvas("tanks")
-          .remove()
+          ,
+          getCanvas("tanks")
+              .remove()
           ,
           newText("pleasewait", "Gehe zum nächsten Satz")
-          .settings.css("font-size", "20pt")
+              .settings.css("font-size", "20pt")
           //.settings.css("padding-left", "1pt")
           //.settings.css("margin-top", "250pt")
-          .settings.center()
-          .print()
-        ,
-        newTimer("wait", 10)
-          .start()
-          .wait()
-        ,
+              .settings.center()
+              .print()
+          ,
+          newTimer("wait", 10)
+              .start()
+              .wait()
+          ,
         newButton("button", "weiter")
           .settings.center()
           .print()
@@ -169,7 +169,7 @@ PennController("picture2",
 
        PennController("picture3",
                    defaultImage
-                           .settings.size(350, 250)
+                           .settings.size(390, 270)
                        ,
                        newText("example3", "Der Urlauber schwimmt im...")
                            .settings.css("font-size", "40pt")
@@ -194,11 +194,11 @@ PennController("picture2",
                  newImage("pic12", "http://vfoss.org:9090/ibex/48_3.jpg")
                  ,
                  newCanvas("tanks", 700, 500)
-                    .settings.add(  2, 0, getImage("pic9"),0 )
-                    .settings.add( 362, 1, getImage("pic10"),1 )
-                    .settings.add(  1, 258, getImage("pic11"),2 )
-                    .settings.add( 376, 261, getImage("pic12"),3 )
-                     .print()
+                      .settings.add(  -35, -90, getImage("pic9"),0 )
+                      .settings.add( 370, -90, getImage("pic10"),1 )
+                      .settings.add(  -35, 190, getImage("pic11"),2 )
+                      .settings.add( 370, 190, getImage("pic12"),3 )
+                      .print()
                  ,
                  newTimer("reminder3", 3000)
                      .settings.callback( getSelector("tank").select(getText("null")) )
@@ -264,7 +264,7 @@ PennController("picture2",
              PennController.Template( PennController.GetTable("itemlist.csv"),
                  row => PennController( "items" ,
                      defaultImage
-                         .settings.size(350, 250)
+                         .settings.size(390, 270)
                      ,
                      newText("test sentence", row.sentence)
                          .settings.css("font-size", "40pt")
@@ -282,10 +282,10 @@ PennController("picture2",
                        .settings.text(" ")
                      ,
                      newCanvas("tanks", 700, 500)
-                       .settings.add( 2, 0, newImage("target", row.metaphoric),0 )
-                       .settings.add( 362, 1, newImage("competitor", row.literal),1 )
-                       .settings.add( 1, 258, newImage("distractor1", row.distr1),2 )
-                       .settings.add( 376, 261, newImage("distractor2", row.distr2),3 )
+                       .settings.add( -35, -90, newImage("target", row.metaphoric),0 )
+                       .settings.add( 370, -90, newImage("competitor", row.literal),1 )
+                       .settings.add( -35, 190, newImage("distractor1", row.distr1),2 )
+                       .settings.add( 370, 190, newImage("distractor2", row.distr2),3 )
                        .print()
                        .settings.log()
 
