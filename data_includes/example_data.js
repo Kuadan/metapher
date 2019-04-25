@@ -28,7 +28,7 @@ PennController("instructions1" ,
 
 PennController("picture1",
         defaultImage
-              .settings.size(350, 250)
+              .settings.size(390, 270)
           ,
           newText("example1", "Das Mädchen isst gerne...")
               .settings.css("font-size", "40pt")
@@ -54,10 +54,10 @@ PennController("picture1",
           newImage("pic4", "http://vfoss.org:9090/ibex/41_4.jpg")
           ,
           newCanvas("tanks", 700, 500)
-              .settings.add(  1, -92, getImage("pic1"),0 )
-              .settings.add( 376, -92, getImage("pic2"),1 )
-              .settings.add(  0, 178, getImage("pic3"),2 )
-              .settings.add( 376, 178, getImage("pic4"),3 )
+              .settings.add(  -35, -90, getImage("pic1"),0 )
+              .settings.add( 370, -90, getImage("pic2"),1 )
+              .settings.add(  -35, 190, getImage("pic3"),2 )
+              .settings.add( 370, 190, getImage("pic4"),3 )
               .print()
           ,
           // nichts gewählt
