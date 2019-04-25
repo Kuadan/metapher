@@ -257,7 +257,7 @@ PennController("picture2",
              PennController.Template( PennController.GetTable("itemlist.csv"),
                  row => PennController( "items" ,
                      defaultImage
-                         .settings.size(640, 360)
+                         .settings.size(350, 250)
                      ,
                      newText("test sentence", row.sentence)
                          .settings.css("font-size", "40pt")
