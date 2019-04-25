@@ -195,7 +195,7 @@ PennController("picture2",
                  ,
                  newCanvas("tanks", 700, 500)
                       .settings.add( 0, -80, getImage("pic9"),0 )
-                      .settings.add( 360, -180, getImage("pic10"),1 )
+                      .settings.add( 360, -80, getImage("pic10"),1 )
                       .settings.add(  0, 180, getImage("pic11"),2 )
                       .settings.add( 360, 180, getImage("pic12"),3 )
                       .print()
