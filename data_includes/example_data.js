@@ -32,7 +32,6 @@ PennController("picture1",
           ,
           newText("example1", "Das Mädchen isst gerne...")
               .settings.css("font-size", "40pt")
-              //.settings.css("padding-left", "1pt")
               .settings.center()
               .print()
           ,
@@ -60,7 +59,6 @@ PennController("picture1",
               .settings.add( 360, 180, getImage("pic4"),3 )
               .print()
           ,
-          // nichts gewählt
           newTimer("reminder1", 3000)
               .settings.callback( getSelector("tank").select(getText("null")) )
               .settings.callback( getText("example1").settings.text("... Sei bitte schneller! ")  )
@@ -71,7 +69,6 @@ PennController("picture1",
               .settings.callback(  getTimer("reminder1").stop() )
               .settings.callback( getText("example1").settings.text(" ")  )
               .shuffle()
-           //.settings.log()
               .wait()
           ,
           getCanvas("tanks")
@@ -80,7 +77,6 @@ PennController("picture1",
           newText("pleasewait", "Gehe zum nächsten Satz")
           .settings.css("font-size", "20pt")
           .settings.css("margin-top", "250pt")
-          //.settings.css("padding-left", "20pt")
           .settings.center()
           .print()
       ,
@@ -148,8 +144,6 @@ PennController("picture2",
           ,
           newText("pleasewait", "Gehe zum nächsten Satz")
               .settings.css("font-size", "20pt")
-          //.settings.css("padding-left", "1pt")
-          //.settings.css("margin-top", "250pt")
               .settings.center()
               .print()
           ,
@@ -210,7 +204,6 @@ PennController("picture2",
                      .settings.callback(  getTimer("reminder3").stop() )
                      .settings.callback( getText("example3").settings.text(" ")  )
                      .shuffle()
-                  //.settings.log()
                      .wait()
                  ,
                  getCanvas("tanks")
@@ -218,8 +211,6 @@ PennController("picture2",
                ,
                newText("pleasewait", "Gehe zum nächsten Satz")
                .settings.css("font-size", "20pt")
-               //.settings.css("margin-top", "220pt")
-               //.settings.css("padding-left", "1pt")
                .settings.center()
                .print()
                ,
@@ -240,8 +231,6 @@ PennController("picture2",
              PennController("instructions2" ,
                  defaultText
                        .settings.css("font-size", "20pt")
-                       //.settings.left()
-                       //.settings.css("margin-top", "50pt")
                        .settings.center()
                        .print()
                  ,
@@ -268,7 +257,6 @@ PennController("picture2",
                      ,
                      newText("test sentence", row.sentence)
                          .settings.css("font-size", "40pt")
-                         //.settings.css("padding-left", "1pt")
                          .settings.center()
                          .print()
                      ,
@@ -291,13 +279,11 @@ PennController("picture2",
 
                      ,
                      newTimer("reminder", 3000)
-                     //  .settings.callback( getText("test sentence").settings.text("Sei bitte schneller!") )
                        .settings.callback( getSelector("tank").select(getText("null")) )
                        .settings.callback( getText("test sentence").settings.text("Sei bitte schneller!") )
                        .start()
                      ,
                      newSelector("tank")
-                       //.settings.log()
                        .settings.add( getImage("target") , getImage("competitor"), getImage("distractor1"), getImage("distractor2") )
                        .settings.callback( getTimer("reminder").stop() )
                        .settings.callback( getText("test sentence").settings.text(" ")  )
@@ -310,8 +296,6 @@ PennController("picture2",
                     ,
                     newText("pleasewait", "Gehe zum nächsten Satz")
                        .settings.css("font-size", "20pt")
-                       //.settings.css("padding-left", "1pt")
-                       //.settings.css("margin-top", "250pt")
                        .settings.center()
                        .print()
                    ,
