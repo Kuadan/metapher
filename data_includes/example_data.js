@@ -54,10 +54,10 @@ PennController("picture1",
           newImage("pic4", "http://vfoss.org:9090/ibex/41_4.jpg")
           ,
           newCanvas("tanks", 700, 500)
-              .settings.add( -67, -78, getImage("pic1"),0 )
-              .settings.add( 377, -78, getImage("pic2"),1 )
-              .settings.add(  -67, 183, getImage("pic3"),2 )
-              .settings.add( 377, 183, getImage("pic4"),3 )
+              .settings.add( -67, -78, getImage("pic1") )
+              .settings.add( 377, -78, getImage("pic2") )
+              .settings.add(  -67, 183, getImage("pic3") )
+              .settings.add( 377, 183, getImage("pic4") )
               .print()
           ,
           newTimer("reminder1", 3000)
@@ -122,10 +122,10 @@ PennController("picture2",
           newImage("pic8", "http://vfoss.org:9090/ibex/example7.jpg")
           ,
           newCanvas("tanks", 700, 500)
-                .settings.add(  -67, -78, getImage("pic5"),0 )
-                .settings.add( 377, -78, getImage("pic6"),1 )
-                .settings.add(  -67, 183, getImage("pic7"),2 )
-                .settings.add( 377, 183, getImage("pic8"),3 )
+                .settings.add(  -67, -78, getImage("pic5") )
+                .settings.add( 377, -78, getImage("pic6") )
+                .settings.add(  -67, 183, getImage("pic7") )
+                .settings.add( 377, 183, getImage("pic8") )
                 .print()
           ,
           newTimer("reminder2", 3000)
@@ -190,10 +190,10 @@ PennController("picture2",
                  newImage("pic12", "http://vfoss.org:9090/ibex/48_3.jpg")
                  ,
                  newCanvas("tanks", 700, 500)
-                      .settings.add( -67, -78, getImage("pic9"),0 )
-                      .settings.add( 377, -78, getImage("pic10"),1 )
-                      .settings.add(  -67, 183, getImage("pic11"),2 )
-                      .settings.add( 377, 183, getImage("pic12"),3 )
+                      .settings.add( -67, -78, getImage("pic9") )
+                      .settings.add( 377, -78, getImage("pic10") )
+                      .settings.add(  -67, 183, getImage("pic11") )
+                      .settings.add( 377, 183, getImage("pic12") )
                       .print()
                  ,
                  newTimer("reminder3", 3000)
@@ -273,10 +273,10 @@ PennController("picture2",
                        .settings.text(" ")
                      ,
                      newCanvas("tanks", 700, 500)
-                       .settings.add( -67, -78, newImage("target", row.metaphoric),0 )
-                       .settings.add( 377, -78, newImage("competitor", row.literal),1 )
-                       .settings.add( -67, 183, newImage("distractor1", row.distr1),2 )
-                       .settings.add( 377, 183, newImage("distractor2", row.distr2),3 )
+                       .settings.add( -67, -78, newImage("target", row.metaphoric) )
+                       .settings.add( 377, -78, newImage("competitor", row.literal) )
+                       .settings.add( -67, 183, newImage("distractor1", row.distr1) )
+                       .settings.add( 377, 183, newImage("distractor2", row.distr2) )
                        .print()
                        .settings.log()
 
