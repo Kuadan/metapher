@@ -76,7 +76,7 @@ PennController("picture1",
       ,
           newText("pleasewait", "Gehe zum nächsten Satz")
           .settings.css("font-size", "20pt")
-          .settings.css("margin-top", "450pt")
+          .settings.css("margin-top", "800pt")
           .settings.center()
           .print()
       ,
@@ -144,7 +144,7 @@ PennController("picture2",
           ,
           newText("pleasewait", "Gehe zum nächsten Satz")
               .settings.css("font-size", "20pt")
-              .settings.css("margin-top", "450pt")
+              .settings.css("margin-top", "800pt")
               .settings.center()
               .print()
           ,
@@ -212,7 +212,7 @@ PennController("picture2",
                ,
                newText("pleasewait", "Gehe zum nächsten Satz")
                .settings.css("font-size", "20pt")
-               .settings.css("margin-top", "450pt")
+               .settings.css("margin-top", "800pt")
                .settings.center()
                .print()
                ,
@@ -298,7 +298,7 @@ PennController("picture2",
                     ,
                     newText("pleasewait", "Gehe zum nächsten Satz")
                        .settings.css("font-size", "20pt")
-                       .settings.css("margin-top", "450pt")
+                       .settings.css("margin-top", "800pt")
                        .settings.center()
                        .print()
                    ,
