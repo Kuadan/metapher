@@ -21,7 +21,7 @@ PennController("instructions1" ,
         ,
         newButton("button", "weiter")
             .settings.center()
-            .settings.css("margin-top", "50pt")
+            .settings.css("margin-top", "20pt")
             .print()
             .wait()
 )
