@@ -53,10 +53,10 @@ PennController("picture1",
           newImage("pic4", "http://vfoss.org:9090/ibex/41_4.jpg")
           ,
           newCanvas("tanks", 700, 500)
-              .settings.add( 0, -80, getImage("pic1"),0 )
-              .settings.add( 360, -80, getImage("pic2"),1 )
-              .settings.add(  0, 180, getImage("pic3"),2 )
-              .settings.add( 360, 180, getImage("pic4"),3 )
+              .settings.add( -70, -105, getImage("pic1"),0 )
+              .settings.add( 376, -105, getImage("pic2"),1 )
+              .settings.add(  -70, -151, getImage("pic3"),2 )
+              .settings.add( 376, -151, getImage("pic4"),3 )
               .print()
           ,
           newTimer("reminder1", 3000)
@@ -76,7 +76,7 @@ PennController("picture1",
       ,
           newText("pleasewait", "Gehe zum nächsten Satz")
           .settings.css("font-size", "20pt")
-          .settings.css("margin-top", "250pt")
+          .settings.css("margin-top", "300pt")
           .settings.center()
           .print()
       ,
@@ -121,10 +121,10 @@ PennController("picture2",
           newImage("pic8", "http://vfoss.org:9090/ibex/example7.jpg")
           ,
           newCanvas("tanks", 700, 500)
-                .settings.add(  0, -80, getImage("pic5"),0 )
-                .settings.add( 360, -80, getImage("pic6"),1 )
-                .settings.add(  0, 180, getImage("pic7"),2 )
-                .settings.add( 360, 180, getImage("pic8"),3 )
+                .settings.add(  -70, -105, getImage("pic5"),0 )
+                .settings.add( 376, -105, getImage("pic6"),1 )
+                .settings.add(  -70, 151, getImage("pic7"),2 )
+                .settings.add( 376, 151, getImage("pic8"),3 )
                 .print()
           ,
           newTimer("reminder2", 3000)
@@ -144,7 +144,7 @@ PennController("picture2",
           ,
           newText("pleasewait", "Gehe zum nächsten Satz")
               .settings.css("font-size", "20pt")
-              .settings.css("margin-top", "250pt")
+              .settings.css("margin-top", "300pt")
               .settings.center()
               .print()
           ,
@@ -189,10 +189,10 @@ PennController("picture2",
                  newImage("pic12", "http://vfoss.org:9090/ibex/48_3.jpg")
                  ,
                  newCanvas("tanks", 700, 500)
-                      .settings.add( 0, -80, getImage("pic9"),0 )
-                      .settings.add( 360, -80, getImage("pic10"),1 )
-                      .settings.add(  0, 180, getImage("pic11"),2 )
-                      .settings.add( 360, 180, getImage("pic12"),3 )
+                      .settings.add( -70, -105, getImage("pic9"),0 )
+                      .settings.add( 376, -105, getImage("pic10"),1 )
+                      .settings.add(  -70, 151, getImage("pic11"),2 )
+                      .settings.add( 376, 151, getImage("pic12"),3 )
                       .print()
                  ,
                  newTimer("reminder3", 3000)
@@ -212,7 +212,7 @@ PennController("picture2",
                ,
                newText("pleasewait", "Gehe zum nächsten Satz")
                .settings.css("font-size", "20pt")
-               .settings.css("margin-top", "250pt")
+               .settings.css("margin-top", "300pt")
                .settings.center()
                .print()
                ,
@@ -272,10 +272,10 @@ PennController("picture2",
                        .settings.text(" ")
                      ,
                      newCanvas("tanks", 700, 500)
-                       .settings.add( 0, -80, newImage("target", row.metaphoric),0 )
-                       .settings.add( 360, -80, newImage("competitor", row.literal),1 )
-                       .settings.add( 0, 180, newImage("distractor1", row.distr1),2 )
-                       .settings.add( 360, 180, newImage("distractor2", row.distr2),3 )
+                       .settings.add( -70, -105, newImage("target", row.metaphoric),0 )
+                       .settings.add( 376, -105, newImage("competitor", row.literal),1 )
+                       .settings.add( -70, 151, newImage("distractor1", row.distr1),2 )
+                       .settings.add( 376, 151, newImage("distractor2", row.distr2),3 )
                        .print()
                        .settings.log()
 
