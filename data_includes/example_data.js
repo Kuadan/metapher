@@ -32,7 +32,7 @@ PennController("picture1",
           ,
           newText("example1", "Das Mädchen isst gerne...")
               .settings.css("font-size", "40pt")
-              .settings.center()
+              .settings.css("padding-left", "1pt")
               .print()
           ,
           newText("null"," ")
@@ -85,7 +85,7 @@ PennController("picture1",
       ,
       newButton("button", "weiter")
           .settings.center()
-          .settings.css("margin-top", "250pt")
+          .settings.css("margin-top", "100pt")
           .print()
           .wait()
       ,
@@ -153,7 +153,7 @@ PennController("picture2",
           ,
         newButton("button", "weiter")
           .settings.center()
-          .settings.css("margin-top", "250pt")
+          .settings.css("margin-top", "100pt")
           .print()
           .wait()
         ,
@@ -220,7 +220,7 @@ PennController("picture2",
            ,
                newButton("button", "weiter")
                  .settings.center()
-                 .settings.css("margin-top", "250pt")
+                 .settings.css("margin-top", "100pt")
                  .print()
                  .wait()
            ,
@@ -306,7 +306,7 @@ PennController("picture2",
                    ,
                    newButton("button", "weiter")
                     .settings.center()
-                    .settings.css("margin-top", "250pt")
+                    .settings.css("margin-top", "100pt")
                     .print()
                     .wait()
               ,
