@@ -85,6 +85,7 @@ PennController("picture1",
       ,
       newButton("button", "weiter")
           .settings.center()
+          .settings.css("margin-top", "500pt")
           .print()
           .wait()
       ,
@@ -143,7 +144,7 @@ PennController("picture2",
           ,
           newText("pleasewait", "Gehe zum nächsten Satz")
               .settings.css("font-size", "20pt")
-              .settings.css("margin-top", "800pt")
+              .settings.css("margin-top", "500pt")
               .settings.center()
               .print()
           ,
