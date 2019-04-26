@@ -21,6 +21,7 @@ PennController("instructions1" ,
         ,
         newButton("button", "weiter")
             .settings.center()
+            .settings.css("margin-top", "50pt")
             .print()
             .wait()
 )
@@ -85,7 +86,7 @@ PennController("picture1",
       ,
       newButton("button", "weiter")
           .settings.center()
-          .settings.css("margin-top", "100pt")
+          .settings.css("margin-top", "50pt")
           .print()
           .wait()
       ,
@@ -153,7 +154,7 @@ PennController("picture2",
           ,
         newButton("button", "weiter")
           .settings.center()
-          .settings.css("margin-top", "100pt")
+          .settings.css("margin-top", "50pt")
           .print()
           .wait()
         ,
@@ -220,7 +221,7 @@ PennController("picture2",
            ,
                newButton("button", "weiter")
                  .settings.center()
-                 .settings.css("margin-top", "100pt")
+                 .settings.css("margin-top", "50pt")
                  .print()
                  .wait()
            ,
@@ -245,6 +246,7 @@ PennController("picture2",
                  ,
                      newButton("button", "weiter")
                        .settings.center()
+                       .settings.css("margin-top", "50pt")
                        .print()
                        .wait()
              )
@@ -306,7 +308,7 @@ PennController("picture2",
                    ,
                    newButton("button", "weiter")
                     .settings.center()
-                    .settings.css("margin-top", "100pt")
+                    .settings.css("margin-top", "50pt")
                     .print()
                     .wait()
               ,
