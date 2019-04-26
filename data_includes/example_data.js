@@ -28,7 +28,7 @@ PennController("instructions1" ,
 
 PennController("picture1",
         defaultImage
-              .settings.size(340, 240)
+              .settings.size(426, 240)
           ,
           newText("example1", "Das Mädchen isst gerne...")
               .settings.css("font-size", "40pt")
@@ -96,7 +96,7 @@ PennController("picture1",
 
 PennController("picture2",
            defaultImage
-                    .settings.size(340, 240)
+                    .settings.size(426, 240)
                 ,
                 newText("example2", "Der Apotheker macht Sport im ...")
                     .settings.css("font-size", "40pt")
@@ -144,6 +144,7 @@ PennController("picture2",
           ,
           newText("pleasewait", "Gehe zum nächsten Satz")
               .settings.css("font-size", "20pt")
+              .settings.css("margin-top", "250pt")
               .settings.center()
               .print()
           ,
@@ -163,7 +164,7 @@ PennController("picture2",
 
        PennController("picture3",
                    defaultImage
-                           .settings.size(340, 240)
+                           .settings.size(426, 240)
                        ,
                        newText("example3", "Der Urlauber schwimmt im...")
                            .settings.css("font-size", "40pt")
@@ -211,6 +212,7 @@ PennController("picture2",
                ,
                newText("pleasewait", "Gehe zum nächsten Satz")
                .settings.css("font-size", "20pt")
+               .settings.css("margin-top", "250pt")
                .settings.center()
                .print()
                ,
@@ -253,7 +255,7 @@ PennController("picture2",
              PennController.Template( PennController.GetTable("itemlist.csv"),
                  row => PennController( "items" ,
                      defaultImage
-                         .settings.size(340, 240)
+                         .settings.size(426, 240)
                      ,
                      newText("test sentence", row.sentence)
                          .settings.css("font-size", "40pt")
@@ -296,6 +298,7 @@ PennController("picture2",
                     ,
                     newText("pleasewait", "Gehe zum nächsten Satz")
                        .settings.css("font-size", "20pt")
+                       .settings.css("margin-top", "250pt")
                        .settings.center()
                        .print()
                    ,
